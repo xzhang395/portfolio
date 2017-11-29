@@ -1,0 +1,51 @@
+# SITE CONFIGURATION
+baseurl: "" # the subpath, e.g. /blog/
+url: "0.0.0.0" # the base hostname & protocol
+
+# THEME-SPECIFIC CONFIGURATION
+theme_settings:
+  # Meta
+  title: "Xueting Zhang"
+  description: "Xueting Nika Zhang - Product Designer" 
+
+  # Header and footer text
+  header_text: >
+     <h1>Designer, Developer, Writer, and Dad.</h1>
+  header_text_feature_image:
+  footer_text: >
+   Handcrafted by Xueting 'Nika' Zhang
+
+  # Icons
+  rss: false
+  email_address: "xuetingz@andrew.cmu.edu"
+  github: "xzhang395"
+  linkedin:  "https://www.linkedin.com/in/xuetingnikazhang/"
+  medium: 
+
+  # Scripts
+  google_analytics: # Tracking ID, e.g. "UA-000000-01"
+  katex: true # math markup
+
+  # Localization strings
+  str_follow_on: "Follow on"
+  str_rss_follow: "Follow RSS feed"
+  str_email: "Email"
+  str_next: "Next"
+  str_prev: "Prev"
+  str_continue_reading: "Continue reading"
+
+  # Colours, typography and padding
+  google_fonts: 	"Didact+Gothic:300,400|PT+Sans:400,700"
+
+# COLLECTIONS
+collections:
+  portfolio:
+    output: true
+  play:
+    output: true
+
+# BUILD SETTINGS
+markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: :compressed

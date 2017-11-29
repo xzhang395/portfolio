@@ -1,0 +1,25 @@
+---
+layout: default
+title: Works
+permalink: /works/
+feature-img: "img/sample_feature_img_2.png"
+---
+
+
+  <div class="work">
+    {% for project in site.portfolio limit:6 %}
+      
+        <li class="padding-small">
+            <a href="{{ project.url }}">  
+          <img src="{{ project.thumbnail-path }}" alt="{{ project.title }}"/>
+        </a>
+        <a href="{{ project.url }}">  
+          <h4>{{ project.title }}</h4>
+        </a>
+            <p>{{ project.short-description }}</p>
+          </li>
+      
+    {% endfor %}
+  </div>
+
+

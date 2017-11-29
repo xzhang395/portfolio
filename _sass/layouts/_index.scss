@@ -1,0 +1,111 @@
+.home-container{
+  background: #DE6262;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #FFB88C, #DE6262);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  width:100vw;
+  height: 100vh;
+}
+.navigation {
+  -webkit-transition: visibility 0s ease-out, opacity 1s ease-out;
+  -moz-transition: visibility 0s ease-out, opacity 1s ease-out;
+  -ms-transition: visibility 0s ease-out, opacity 1s ease-out;
+  transition: visibility 0s ease-out, opacity 1s ease-out;
+}
+.navigation {
+  position: absolute;
+  width: 250px;
+  height: 80px;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.dragger-area {
+  position: relative;
+  width: 100%;
+  height: 80px;
+}
+#stop-motion{
+  margin: 0 auto 0;
+  max-width: 579px;
+  height: 820.51657px;
+  position: relative;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  background-color: rgba(0,0,0,0);
+  width: 250px;
+  // height:2px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   background-color: white;
+   border-color: white;
+  border-width: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  cursor: move;
+  transition: 500;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+ width: 40px;
+ height: 40px;
+ border-radius: 20px;
+ transform:translateX(-5px);
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.h-bag-img {
+  position: absolute;
+  top: -100px;
+  right: 0;
+  height: 100%;
+  width: auto;
+  pointer-events: none;
+  opacity: 0;
+}
+
+#end{
+  position: absolute;
+  right: 0;
+  top:50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border-style: dashed;
+  border-color: white;
+  border-width: 1px;
+  z-index: 1;
+}
+#line{
+  position: absolute;
+  border-style: dashed;
+  border-color: white;
+  border-width: 1px;
+  z-index: 1;
+  left:0px;
+  opacity: 0.2;
+  right: 30px;
+  top:50%;
+  transform:translateY(-50%);
+  
+}
+#instruction{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-family: $font-family-headings;
+  font-size: 16px;
+  letter-spacing: 0.3em;
+}
+#slider{
+  z-index: 10;
+}

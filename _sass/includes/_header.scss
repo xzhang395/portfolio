@@ -1,0 +1,51 @@
+.site-header {
+  @extend %padding-small;
+  background: $brand-color;
+  display: inline-block;
+  float: left;
+  width: 100%;
+  a {
+    color: $header-link-color;
+  }
+
+  .avatar {
+    height: 2em;
+    width: 2em;
+    float: left;
+    margin-top: -3px;
+    border-radius: 0.2em;
+    margin-right: 1em;
+  }
+
+  .site-title {
+    float: left;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  .site-nav {
+    font-family: $font-family-headings;
+    font-weight: 300;
+    font-size: 16px;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      line-height: 1.5;
+      text-align: center;
+    }
+    li {
+      display: inline;
+      margin-right: 1em;
+    }
+    @media (max-width: 1100px) {
+      ul {
+        display: inline-block;
+        padding-top: $padding-small;
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+}
