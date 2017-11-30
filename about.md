@@ -6,7 +6,7 @@ target: "-1"
 feature-img: "img/sample_feature_img_2.png"
 ---
 <div class="profile">
-<img src={{ "img/profile.png" | prepend: site.baseurl }} alt="profile picture"/>
+<img src="img/profile.png" alt="profile picture"/>
 {% include icons.html %}
 </div>
 <div class="tldr padding-small">
