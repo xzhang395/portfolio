@@ -1,0 +1,66 @@
+= CSSPool
+
+* https://github.com/stereobooster/csspool
+* http://csspool.rubyforge.org
+* http://github.com/tenderlove/csspool
+
+== DESCRIPTION:
+
+Fork of CSSPool. CSSPool is a CSS parser.  CSSPool provides a SAC interface for parsing CSS as
+well as a document oriented interface for parsing CSS.
+
+== FEATURES/PROBLEMS:
+
+CSSPool no longer depends on libcroco! There is now a dependency on both the
+{racc}[http://github.com/tenderlove/racc] and
+{rexical}[http://github.com/tenderlove/rexical] gems, so make sure to install
+them first.
+
+$ sudo gem install racc
+$ sudo gem install rexical
+
+== SYNOPSIS:
+
+  doc = CSSPool.CSS open('/path/to/css.css')
+  doc.rule_sets.each do |rs|
+    puts rs.to_css
+  end
+
+  puts doc.to_css
+
+== REQUIREMENTS:
+
+* racc ("sudo gem install racc")
+* rexical ("sudo gem install rexical")
+
+== INSTALL:
+
+* sudo gem install csspool
+
+== LICENSE:
+
+(The MIT License)
+
+Copyright (c) 2007-2012
+
+* {Aaron Patterson}[http://tenderlovemaking.com]
+* {John Barnette}[http://www.jbarnette.com/]
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

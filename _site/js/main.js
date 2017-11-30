@@ -1,5 +1,13 @@
 
 $(document).ready(function () {
+  // Barba.Pjax.start();
+  $('.one-time').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true
+    });
   var clientHeight = $( window ).height();
   $('.home-container').css('height', clientHeight);
   var elements = document.getElementsByTagName('script')
@@ -45,6 +53,10 @@ $(document).ready(function () {
       else {
         $("img:nth-child(" + (j+1) + ")").css("opacity", "0");
       }
+    }
+    if (currentval>98){
+      window.location.href = "works";
+      console.log("hi");
     }
 
   });

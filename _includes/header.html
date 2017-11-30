@@ -1,19 +1,15 @@
 <header class="site-header">
-	<div class="branding">
-		<a href="{{ site.baseurl }}/">
-			<!-- <img class="avatar" src="/img/{{ site.theme_settings.avatar }}" alt=""/> -->
-			<div></div>
-		</a>
-		<!-- <h1 class="site-title">
-			<a href="{{ site.baseurl }}/">{{ site.theme_settings.title }}</a>
-		</h1> -->
-	</div>
 	<nav class="site-nav">
 		<ul>
+			<a id="homeicon" href="{{ site.baseurl }}/"></a>
 			{% for page in site.pages %}
 			{% if page.title and page.hide != true %}
 			<li>
-				<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
+				<a class="page-link" href="{{ page.url | prepend: site.baseurl }}"
+				class="animsition-link"
+				data-animsition-out-class="fade-out-right"
+				data-animsition-out-duration="2000"
+				>
 					{{ page.title }}
 				</a>
 			</li>

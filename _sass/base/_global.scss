@@ -16,7 +16,7 @@ html {
   background: $selection-color;
 }
 body {
-  color: $text-color;
+  color: $text-grey;
   font-family: $font-family-main;
   font-size: $font-size;
   word-wrap: break-word;
@@ -41,6 +41,15 @@ h3 {
 }
 h4 {
   font-size: 1.25em;
+  font-weight: 600;
+}
+h5 {
+  font-size: 1em;
+  color: #999988;
+  font-weight: 300;
+}
+a h4{
+  color: black;
 }
 blockquote {
     border-left: 2px solid;
@@ -122,4 +131,14 @@ img[align=right] {
 .padding-x-small{
   padding-top:$padding-x-small;
 }
-
+.padding-large{
+  padding-top:$padding-large;
+}
+#homeicon{
+  position: absolute;
+  left: 100px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: black;
+}

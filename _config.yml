@@ -2,7 +2,6 @@
 baseurl: "" # the subpath, e.g. /blog/
 url: "0.0.0.0" # the base hostname & protocol
 
-# THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
   title: "Xueting Zhang"
@@ -49,3 +48,5 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: :compressed
+
+destination: docs

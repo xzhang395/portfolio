@@ -5,14 +5,40 @@ permalink: /play/
 feature-img: "img/color.png"
 ---
 
-Here are couple of my passion projects.
+<h5>Here are couple of my passion projects.</h5>
   <div class="play">
-    {% for project in site.play limit:6 %}
-        <li class="padding-small">
+            <li class="padding-small">
+            <div class="one-time">
+              <div><img src="../img/play/arko2.jpg" alt="album cover design"/></div>
+              <div><img src="../img/play/arko3.jpg" alt="album cover design"/></div>
+              <div><img src="../img/play/arko4.jpg" alt="album cover design"/></div>
+              <div><img src="../img/play/arko5.jpg" alt="album cover design"/></div>
+              <div><img src="../img/play/arko6.jpg" alt="album cover design"/></div>
+            </div>
+          <h4>ARKO SMITH: ALBUM COVER DESIGN</h4>
+          <p>Arko Smith is an imaginary pop rock singer who was the founder of the Arko Shaving Stick Company. The project is a series of Vinyl/CD cover design for Arko Smith’s album “The Granite Rose”. (All Imaginary songs, do not look them up on Spotify)</p>
+        </li>
+            <li class="padding-large">
+              <div class="one-time">
+                <div><a href="https://home-d9b8a.firebaseapp.com"><img src="../img/play/web1.jpg" alt="web experience series"/><h5>Home Page</h5></a></div>
+                <div><img src="../img/play/web2.jpg" alt="web experience series"/></div>
+                <div><img src="../img/play/web3.jpg" alt="web experience series"/></div>
+                <div><img src="../img/play/web4.jpg" alt="web experience series"/></div>
+                <div><img src="../img/play/web5.jpg" alt="web experience series"/></div>
+                <div><img src="../img/play/web6.jpg" alt="web experience series"/></div>
+            </div>
+          <h4>WEB EXPERIENCE SERIES</h4>
+          <p>A series of projects that aim to experiment with creative storytelling through a range of mediums and technologies including 2D design, digital imaging, sound, video, animation, and effects.</p>
+        </li>
+                <li class="padding-large">
           <img src="{{ project.thumbnail-path }}" alt="{{ project.title }}"/>
           <a href="{{ project.url }}"><h4>{{ project.title }}</h4></a>
           <p>{{ project.short-description }}</p>
         </li>
-    {% endfor %}
+                <li class="padding-large">
+          <img src="{{ project.thumbnail-path }}" alt="{{ project.title }}"/>
+          <a href="{{ project.url }}"><h4>{{ project.title }}</h4></a>
+          <p>{{ project.short-description }}</p>
+        </li>
   </div>
 
