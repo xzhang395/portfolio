@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Play
+target: "0"
 permalink: /play/
 feature-img: "img/color.png"
 ---

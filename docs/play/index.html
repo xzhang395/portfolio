@@ -5,7 +5,6 @@
 	<title>Play | Xueting Zhang</title>
 	<meta name="description" content="Xueting Nika Zhang - Product Designer">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<!-- CSS -->
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" type="text/css" href="/css/slick.css"/>	
@@ -43,16 +42,17 @@
 
 
 <body>
+  <div id="main">
   <header class="site-header">
 	<nav class="site-nav">
-		<ul>
+		<ul >
 			<a id="homeicon" href="/"></a>
 			
 			
 			
 			
 			<li>
-				<a class="page-link" href="/about/"
+				<a class="page-link" data-target="-1" href="/about/"
 				class="animsition-link"
 				data-animsition-out-class="fade-out-right"
 				data-animsition-out-duration="2000"
@@ -68,7 +68,7 @@
 			
 			
 			<li>
-				<a class="page-link" href="/play/"
+				<a class="page-link" data-target="0" href="/play/"
 				class="animsition-link"
 				data-animsition-out-class="fade-out-right"
 				data-animsition-out-duration="2000"
@@ -80,7 +80,7 @@
 			
 			
 			<li>
-				<a class="page-link" href="/works/"
+				<a class="page-link" data-target="1" href="/works/"
 				class="animsition-link"
 				data-animsition-out-class="fade-out-right"
 				data-animsition-out-duration="2000"
@@ -96,14 +96,9 @@
 </header>
 
   <div class="content">
-    <div id="barba-wrapper">
-      <div class="barba-container">
-        <div id="barba-wrapper">
-  <div class="barba-container">
-    <article class="feature-image" >
-      <!-- <header style="background-image: url('/img/color.png')">
-    <h1 class="title">Play</h1>
-  </header> -->
+    <!-- <div id="barba-wrapper">
+      <div class="barba-container"> -->
+            <article class="feature-image" >
       <section class="post-content"><h5>Here are couple of my passion projects.</h5>
 <div class="play">
             <li class="padding-small">
@@ -143,12 +138,11 @@
 
 </section>
     </article>
-  </div>
-</div>
-      </div>
-    </div>
+      <!-- </div>
+    </div> -->
 
   </div>
+</div>
   
 
 <footer class="site-footer">
@@ -160,9 +154,13 @@
 src="https://code.jquery.com/jquery-3.2.1.min.js"
 integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js" type="text/javascript"></script>
+<!-- <script src="/js/barba.js"></script>
+<script src="/js/nextprev.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.1/TweenMax.min.js"></script> -->
+<script src="/js/jquery.smoothState.js"></script>
 <script src="/js/slick.min.js"></script>
 <script src="/js/main.js"></script>
+
 </body>
 
 </html>
