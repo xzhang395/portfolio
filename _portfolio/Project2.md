@@ -2,7 +2,7 @@
 layout: post
 title: Project2
 feature-img: "img/sample_feature_img.png"
-thumbnail-path: "http://www.pixedelic.com/themes/geode/demo/wp-content/uploads/sites/4/2014/04/placeholder2.png"
+thumbnail-path: "https://netdna.webdesignerdepot.com/uploads/2017/01/011.jpg"
 short-description: BlocJams for iOS is awesome!
 
 ---
