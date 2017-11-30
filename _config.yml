@@ -1,5 +1,5 @@
 # SITE CONFIGURATION
-baseurl: "" # the subpath, e.g. /blog/
+baseurl: "/portfolio/" # the subpath
 url: "0.0.0.0" # the base hostname & protocol
 
 theme_settings:
