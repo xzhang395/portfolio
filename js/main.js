@@ -1,5 +1,8 @@
 
 $(document).ready(function () {
+  $(window).resize(function(){location.reload();});
+  var h = window.innerHeight;
+  $('#stop-motion').css('height',h);
   // Barba.Pjax.start();
   // Barba.Prefetch.init();
 //   var $body = $('body'),
@@ -41,7 +44,7 @@ $(document).ready(function () {
 
   $('.one-time').slick({
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 300,
     slidesToShow: 1,
     adaptiveHeight: true
@@ -98,4 +101,53 @@ $(document).ready(function () {
     }
 
   });
+  $('.center').slick({
+    centerMode: true,
+    infinite: false,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    prevArrow:'<button type="button" class="prev">Previous</button>',
+    nextArrow:'<button type="button" class="next">Previous</button>',    
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+  if ($('#back-to-top').length) {
+    var scrollTrigger = 100, // px
+        backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('#back-to-top').addClass('show');
+            } else {
+                $('#back-to-top').removeClass('show');
+            }
+        };
+    backToTop();
+    $(window).on('scroll', function () {
+        backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+}
 })
