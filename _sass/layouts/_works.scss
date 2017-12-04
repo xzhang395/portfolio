@@ -72,12 +72,7 @@
       margin-top: 1em;
     }
   }
-  /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  li{
-    width:100%;
-  }
-  }
+
   .play{
     h2 {
       text-align: center;
@@ -93,10 +88,131 @@
     .excerpt {
       margin-top: 1em;
     }
-    .slick-slide img{
+    .slick-slide img {
       margin: auto;
-    }
+  }
   }
 
-  
+    /* Smartphones (portrait and landscape) ----------- */
+    @media (max-device-width: 480px){
+      .work li:nth-child(even) {width:100%}
+      .work li:nth-child(odd) {width:100%}
+      #homeicon {left:45px;}
+      .other-works{
+        max-width: 250px;
+      }
+    }
+    @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+      .other-works{
+        max-width: 200px;
+      }
+  }
+  /* Arrows */
+.prev,
+.next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    z-index: 100;
+}
+.prev:hover,
+.prev:focus,
+.next:hover,
+.next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.prev:hover:before,
+.prev:focus:before,
+.next:hover:before,
+.next:focus:before
+{
+    opacity: 1;
+}
+.prev.disabled:before,
+.next.disabled:before
+{
+    opacity: .25;
+}
+
+.prev:before,
+.next:before
+{
+    font-family: 'slick';
+    font-size: 35px;
+    line-height: 1;
+
+    opacity: .2;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.prev
+{
+    left: 40px;
+}
+[dir='rtl'] .prev
+{
+    right: 40px;
+    left: auto;
+}
+.prev:before
+{
+    content: '←';
+}
+[dir='rtl'] .prev:before
+{
+    content: '→';
+}
+
+.next
+{
+    right: 40px;
+}
+[dir='rtl'] .next
+{
+    right: auto;
+    left: -25px;
+}
+.next:before
+{
+    content: '→';
+}
+[dir='rtl'] .next:before
+{
+    content: '←';
+}
+
+.center{
+  text-align: center;
+}
+.slick-slide img{
+  margin: auto;
+}
   

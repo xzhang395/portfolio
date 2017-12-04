@@ -21,25 +21,15 @@ feature-img: "img/color.png"
         </li>
             <li class="padding-large">
               <div class="one-time">
-                <div><a href="https://home-d9b8a.firebaseapp.com"><img src="../img/play/web1.jpg" alt="web experience series"/><h5>Home Page</h5></a></div>
-                <div><img src="../img/play/web2.jpg" alt="web experience series"/></div>
-                <div><img src="../img/play/web3.jpg" alt="web experience series"/></div>
-                <div><img src="../img/play/web4.jpg" alt="web experience series"/></div>
-                <div><img src="../img/play/web5.jpg" alt="web experience series"/></div>
-                <div><img src="../img/play/web6.jpg" alt="web experience series"/></div>
+                <div><a href="https://home-d9b8a.firebaseapp.com"><img src="../img/play/web1.jpg" alt="web experience series"/><h5>HOME</h5></a></div>
+                <div><a href="https://connecting-the-dots-bad05.firebaseapp.com/"><img src="../img/play/web2.jpg" alt="web experience series"/><h5>CONNECTING THE DOTS</h5></a></div>
+                <div><a href="https://room-cf172.firebaseapp.com"><img src="../img/play/web3.jpg" alt="web experience series"/><h5>ROOM</h5></a></div>
+                <div><a href="http://arte-ha.us/agile/droneio/"><img src="../img/play/web4.jpg" alt="web experience series"/><h5>INTRODUCING DRONE-IO</h5></a></div>
+                <div><a href="https://childhood-b340d.firebaseapp.com/"><img src="../img/play/web5.jpg" alt="web experience series"/><h5>CHILDHOOD</h5></a></div>
+                <div><a href="https://drawing-board-ec4f1.firebaseapp.com/"><img src="../img/play/web6.jpg" alt="web experience series"/><h5>Collaborative Drawing App</h5></a></div>
             </div>
           <h4>WEB EXPERIENCE SERIES</h4>
           <p>A series of projects that aim to experiment with creative storytelling through a range of mediums and technologies including 2D design, digital imaging, sound, video, animation, and effects.</p>
-        </li>
-                <li class="padding-large">
-          <img src="{{ project.thumbnail-path }}" alt="{{ project.title }}"/>
-          <a href="{{ project.url }}"><h4>{{ project.title }}</h4></a>
-          <p>{{ project.short-description }}</p>
-        </li>
-                <li class="padding-large">
-          <img src="{{ project.thumbnail-path }}" alt="{{ project.title }}"/>
-          <a href="{{ project.url }}"><h4>{{ project.title }}</h4></a>
-          <p>{{ project.short-description }}</p>
         </li>
   </div>
 

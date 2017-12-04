@@ -4,6 +4,7 @@
   background: linear-gradient(to bottom, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
   width:100vw;
   height: 100vh;
+  overflow: hidden;
 }
 .navigation {
   -webkit-transition: visibility 0s ease-out, opacity 1s ease-out;
@@ -28,8 +29,9 @@
 #stop-motion{
   margin: 0 auto 0;
   max-width: 579px;
-  height: 820.51657px;
+  height: 100%;
   position: relative;
+  overflow: hidden;
 }
 input[type=range] {
   -webkit-appearance: none;
@@ -63,9 +65,9 @@ button:focus {
 }
 .h-bag-img {
   position: absolute;
-  top: -100px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 0;
-  height: 100%;
   width: auto;
   pointer-events: none;
   opacity: 0;
