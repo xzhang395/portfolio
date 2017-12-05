@@ -123,8 +123,6 @@ $(".slick-slide").click(function() {
   localStorage.setItem("project", index);
 });
 var cp = parseInt(localStorage.getItem('project'));
-console.log(cp);
 cp+=1;
 $( ".slick-slide:nth-child("+ cp +")").remove();
-console.log($( ".slick-slide:nth-child("+ cp +")").attr("data-slick-index"));
 })
