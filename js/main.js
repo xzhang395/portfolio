@@ -1,47 +1,11 @@
 
 $(document).ready(function () {
+  if (localStorage.getItem('project') == null) { localStorage.setItem("project", 0); } 
   $(window).resize(function(){location.reload();});
   var h = window.innerHeight;
+  var w = window.innerWidth;
   $('#stop-motion').css('height',h);
-  // Barba.Pjax.start();
-  // Barba.Prefetch.init();
-//   var $body = $('body'),
-//   $main = $('#main'),
-//   $site = $('html, body'),
-//   transition = 'fade',
-//   smoothState;
-
-// smoothState = $main.smoothState({
-//   onBefore: function($anchor, $container) {
-//       var current = $('[data-viewport]').first().data('viewport'),
-//           target = $anchor.data('target');
-//       current = current ? current : 0;
-//       target = target ? target : 0;
-//       if (current === target) {
-//           transition = 'fade';
-//       } else if (current < target) {
-//           transition = 'moveright';
-//       } else {
-//           transition = 'moveleft';
-//       }
-//   },
-//   onStart: {
-//       duration: 400,
-//       render: function (url, $container) {
-//           $main.attr('data-transition', transition);
-//           $main.addClass('is-exiting');
-//           $site.animate({scrollTop: 0});
-//       }
-//   },
-//   onReady: {
-//       duration: 0,
-//       render: function ($container, $newContent) {
-//           $container.html($newContent);
-//           $container.removeClass('is-exiting');
-//       }
-//   },
-// }).data('smoothState');
-
+  $('#stop-motion').css('width',w);
   $('.one-time').slick({
     dots: true,
     infinite: false,
@@ -81,6 +45,11 @@ $(document).ready(function () {
   //when slider changed value
   $(document).on('input', '#slider', function () {
     var currentval = $(this).val();
+    if (currentval==0){
+      $('.headline').addClass('animated fadeIn');
+      $('.headline').removeClass(' fadeOut');
+    }else{ $('.headline').addClass('animated fadeOut');
+    $('.headline').removeClass(' fadeIn'); }
       //what is the current frame
     for (var i = 1; i < (frameNum + 1); i++) {
       if (currentval < i * step && currentval >= (i - 1) * step) {
@@ -97,7 +66,6 @@ $(document).ready(function () {
     }
     if (currentval>98){
       window.location.href = "works";
-      console.log("hi");
     }
 
   });
@@ -150,4 +118,13 @@ $(document).ready(function () {
         }, 700);
     });
 }
+$(".slick-slide").click(function() {
+  var index = $(this).attr("data-slick-index");
+  localStorage.setItem("project", index);
+});
+var cp = parseInt(localStorage.getItem('project'));
+console.log(cp);
+cp+=1;
+$( ".slick-slide:nth-child("+ cp +")").remove();
+console.log($( ".slick-slide:nth-child("+ cp +")").attr("data-slick-index"));
 })

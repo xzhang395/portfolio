@@ -140,7 +140,15 @@ img[align=right] {
   width: 20px;
   height: 20px;
   border-radius: 10px;
-  background-color: black;
+  background-color: #fdd;
+  transition: 500;
+}
+#homeicon:hover{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  transform: translate(-5px,-5px)
+
 }
 a.nav.next {
   -webkit-clip-path: circle(40px at 97% 50%);

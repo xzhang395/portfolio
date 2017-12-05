@@ -37,8 +37,6 @@
   // Work listing
   .work {
     h4 {
-      // margin-bottom: 0;
-      // margin-top: 0.5em;
       color: $text-color;
     }
     p{
@@ -60,7 +58,6 @@
     }
     li:nth-child(even) {
       width: 45%;
-      // margin-right:4%;
       margin-left:4%;
       margin-bottom: 0;
       display: inline-block;
@@ -101,6 +98,11 @@
       .other-works{
         max-width: 250px;
       }
+      .headline{font-size: 40px;
+      span{font-size: 20px;}}
+      .h-bag-img{
+        max-width: 300px;}
+      
     }
     @media only screen 
     and (min-device-width: 768px) 

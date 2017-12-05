@@ -1,7 +1,5 @@
 .home-container{
-  background: #DE6262;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #FFB88C, #DE6262);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  background: #fdd; 
   width:100vw;
   height: 100vh;
   overflow: hidden;
@@ -28,7 +26,6 @@
 }
 #stop-motion{
   margin: 0 auto 0;
-  max-width: 579px;
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -37,7 +34,6 @@ input[type=range] {
   -webkit-appearance: none;
   background-color: rgba(0,0,0,0);
   width: 250px;
-  // height:2px;
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -50,6 +46,7 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 15px;
   cursor: move;
   transition: 500;
+  z-index: 100;
 }
 input[type="range"]::-webkit-slider-thumb:hover {
  width: 40px;
@@ -65,9 +62,10 @@ button:focus {
 }
 .h-bag-img {
   position: absolute;
+  max-width: 550px;
   top: 50%;
-  transform: translateY(-50%);
-  right: 0;
+  transform: translate(-50%,-50%);
+  left: 50%;
   width: auto;
   pointer-events: none;
   opacity: 0;
@@ -82,14 +80,14 @@ button:focus {
   height: 30px;
   border-radius: 15px;
   border-style: dashed;
-  border-color: white;
+  border-color: #999;
   border-width: 1px;
   z-index: 1;
 }
 #line{
   position: absolute;
   border-style: dashed;
-  border-color: white;
+  border-color: #999;
   border-width: 1px;
   z-index: 1;
   left:0px;
@@ -103,11 +101,24 @@ button:focus {
   position: absolute;
   text-align: center;
   width: 100%;
-  color: white;
+  color: #999;
   font-family: $font-family-headings;
   font-size: 16px;
   letter-spacing: 0.3em;
 }
 #slider{
   z-index: 10;
+}
+.headline{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-80%);
+  letter-spacing: 0.3em;
+  font-size: 60px;
+  text-align: center;  
+  font-weight: 600;
+  span{
+    font-size:40px;
+  }
 }
