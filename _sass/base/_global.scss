@@ -51,6 +51,11 @@ h5 {
 a h4{
   color: black;
 }
+em {
+  color: #999;
+  font-size: 19px;
+  margin: 0;
+}
 blockquote {
     border-left: 2px solid;
     padding: 1em 1em;
@@ -357,4 +362,8 @@ a.nav {
   animation-name: moveOutToLeft;
 }
 
-
+.post-content{
+  -webkit-animation-duration: 100;
+  -moz-animation-duration: 100;
+  animation-duration: 100;
+}

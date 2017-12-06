@@ -24,3 +24,36 @@
     border-radius: 50%;
   }
 }
+.resume{
+  margin: auto;
+  max-width: 650px;
+  h4{
+    margin: 0;
+    font-size: 20px;    
+  }
+  p+h4{
+    margin-top:20px;
+  }
+  .duration, .location {
+    float: right;
+    font-size: 15px;
+}
+p {
+  left: 0;
+  margin: 0;
+  margin-left: 20px;
+  font-size: 17px;
+  color: #555;
+  line-height: 1.1;
+  width: 510px;
+}
+.section>h3 {
+  font-size: 23px;
+  color: #63b092;
+  margin: 0px;
+}
+.section{
+  margin-top:$padding-small;
+}
+}
+

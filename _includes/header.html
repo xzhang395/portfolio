@@ -1,14 +1,11 @@
 <header class="site-header">
-	<nav class="site-nav">
+	<nav class="site-nav highlightTextOut">
 		<ul >
 			<a id="homeicon" href="{{ site.baseurl }}/"></a>
 			{% for page in site.pages %}
 			{% if page.title and page.hide != true %}
 			<li>
 				<a class="page-link" data-target="{{ page.target}}" href="{{ page.url | prepend: site.baseurl }}"
-				class="animsition-link"
-				data-animsition-out-class="fade-out-right"
-				data-animsition-out-duration="2000"
 				>
 					{{ page.title }}
 				</a>

@@ -1,13 +1,12 @@
 ---
 layout: default
 title: Works
-target: "1"
+target: "2"
+order: 2
 permalink: /works/
 feature-img: "img/sample_feature_img_2.png"
 ---
-
-
-  <div class="work">
+<article class="work animated fadeIn">
     {% for project in site.portfolio limit:6 %}
       
         <li class="padding-small">
@@ -21,6 +20,7 @@ feature-img: "img/sample_feature_img_2.png"
           </li>
       
     {% endfor %}
-  </div>
+</article>
+
 
 

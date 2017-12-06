@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Play
-target: "0"
+target: "1"
 permalink: /play/
 feature-img: "img/color.png"
+order: 3
 ---
 
 <h5>Here are couple of my passion projects.</h5>
