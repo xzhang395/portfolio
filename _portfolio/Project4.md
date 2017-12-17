@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Project4
+title: MoQuality
 feature-img: "img/sample_feature_img.png"
 thumbnail-path: "https://i.pinimg.com/736x/07/04/03/0704036a83320af7e807ef9c68f02aa6--mobile-design-app-design.jpg"
-short-description: BlocJams for iOS is awesome!
+short-description: Dashboard for AI based App testing
 
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad non minus porro. Rerum magnam ab, esse sunt nisi a praesentium pariatur quia unde architecto eveniet ipsum molestiae maxime sit, assumenda.

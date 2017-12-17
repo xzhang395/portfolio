@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Project3
+title: Earnist
 feature-img: "img/sample_feature_img.png"
 thumbnail-path: "https://www.thebestdesigns.com/theme-images/themeforest-creative-1.jpg"
-short-description: BlocJams for iOS is awesome!
-
+short-description: Empowering Teen Entrepreneurs
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad non minus porro. Rerum magnam ab, esse sunt nisi a praesentium pariatur quia unde architecto eveniet ipsum molestiae maxime sit, assumenda.
 

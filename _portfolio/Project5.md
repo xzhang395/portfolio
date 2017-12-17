@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Project5
+title: H.E.L.P
 feature-img: "img/sample_feature_img.png"
-thumbnail-path: "https://cdn-images-1.medium.com/max/2000/1*uM-RlnSBNWXc6RJjXrwDNw.png"
-short-description: BlocJams for iOS is awesome!
+thumbnail-path: "../img/help/thumbnail.png"
+short-description: Visualize the health, environment, and livability data
 
 ---
+http://geospatial.gatech.edu/PICH/
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad non minus porro. Rerum magnam ab, esse sunt nisi a praesentium pariatur quia unde architecto eveniet ipsum molestiae maxime sit, assumenda.
 
 Labore maiores ratione enim tenetur sequi, esse. Expedita necessitatibus et distinctio quas eum, magni dolorem similique, quod aut, ratione optio! Laudantium similique deleniti beatae facere reiciendis laboriosam nulla fugit illum.

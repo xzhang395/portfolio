@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Project6
+title: Texture
 feature-img: "img/sample_feature_img.png"
-thumbnail-path: "http://www.desartlab.com/wp-content/uploads/2016/02/navigation-bar-mobile-app-design.png"
-short-description: BlocJams for iOS is awesome!
+thumbnail-path: "../img/texture/thumbnail.png"
+short-description: Assistive phone case design
 
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad non minus porro. Rerum magnam ab, esse sunt nisi a praesentium pariatur quia unde architecto eveniet ipsum molestiae maxime sit, assumenda.

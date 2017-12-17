@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Project2
+title: MedShare
 feature-img: "img/sample_feature_img.png"
 thumbnail-path: "https://netdna.webdesignerdepot.com/uploads/2017/01/011.jpg"
-short-description: BlocJams for iOS is awesome!
-
+short-description: Available emergency medicine with sharing economy
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad non minus porro. Rerum magnam ab, esse sunt nisi a praesentium pariatur quia unde architecto eveniet ipsum molestiae maxime sit, assumenda.
 

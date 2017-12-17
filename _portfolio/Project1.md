@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Project1
+title: Bento Browser
 feature-img: "img/sample_feature_img.png"
 thumbnail-path: "http://www.designyourway.net/diverse/6/greatportfolio/1259890.jpg"
-short-description: BlocJams for iOS is awesome!
+short-description: Knowledge accelerator through collaborative search
 
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad non minus porro. Rerum magnam ab, esse sunt nisi a praesentium pariatur quia unde architecto eveniet ipsum molestiae maxime sit, assumenda.

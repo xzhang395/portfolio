@@ -20,7 +20,7 @@ $(document).ready(function () {
     infinite: false,
     speed: 300,
     slidesToShow: 1,
-    adaptiveHeight: true
+    adaptiveHeight: false,
     });
   var clientHeight = $( window ).height();
   $('.home-container').css('height', clientHeight);
@@ -135,4 +135,6 @@ $(".center .slick-slide").click(function() {
 var cp = parseInt(localStorage.getItem('project'));
 cp+=1;
 $( ".center .slick-slide:nth-child("+ cp +")").remove();
+$('.center').slick('slickGoTo',cp-1);
 })
+
