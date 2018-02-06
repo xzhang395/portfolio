@@ -1,2 +1,1 @@
-# vidazhang.com
-My portfolio 
+Portfolio of Xueting "Nika" Zhang
