@@ -1,6 +1,2 @@
-# Portfolio Xueting Zhang
-> jekyll serve --baseurl ""
-### Build before uploading
-> bundle exec jekyll build
-
-
+# vidazhang.com
+My portfolio 

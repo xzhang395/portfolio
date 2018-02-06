@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MoQuality | Xueting Zhang</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!--Google icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,700" rel="stylesheet">
+
+    <link rel='shortcut icon' href='../assets/favicon.ico' type='image/x-icon' />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/slick-theme.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="nav-down">
+        <a href="../index.html" class="logo">
+            <img class="logo-img" src="../assets/Logo.png" alt="Logo">
+        </a>
+        <ul>
+            <li class="dropdown">
+                <a class='menu dropdown-toggle' data-toggle="dropdown" href="#">Portfolio
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="../projects/collaborative-search.html">Collaborative Search</a>
+                    </li>
+                    <li>
+                        <a href="../projects/earnist.html">Earnist</a>
+                    </li>
+                    <li>
+                        <a href="../projects/medshare.html">MedShare</a>
+                    </li>
+                    <li>
+                        <a href="../projects/moquality.html">MoQuality</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class='menu' href="../projects/about-me.html">About Me</a>
+            </li>
+            <li>
+                <a class='menu' href="../projects/play.html">Play</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="sidebar project-sidebar">
+        <div class="project-sum hidden">
+            <h5>MoQuality</h5>
+            <div id="tags">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="works-detail">
+        <div class='project project-details'>
+            <div class="space30px"></div>
+            <div class="space15px"></div>
+            <h1>MoQuality
+                <br>
+                <em>AI based mobile app testing platform</em>
+            </h1>
+
+            <h4>February 2017 – June 2017 ( 3 months )
+                <br> Shipped
+            </h4>
+
+            <div class="space15px"></div>
+            <br>
+
+            <h3 id='s1' class='section'>INTRO</h3>
+            <p>During my 3-month's contract work at the startup company
+                <a href="https://moquality.com/" target="_blank">MoQuality</a>. I was challenged to
+                <b>design a platform for automated mobile app testing from scratch. </b>
+                As the only designer on the team, I worked closely with the developers/executives to understand the technology and company
+                goal. Iterate fast, test the designs with potential users and use insights to guide product direction.</p>
+            <div class="space15px"></div>
+            <br>
+            <h3 id='s2' class='section'>GETTING STARTED</h3>
+            <h2>How to help user understand testing results?</h2>
+            <p>MoQuality's initial product was a program that randomly clicks on any buttons on the screen and detect possible
+                usability issues. An "App Map"is then generated to display all the screens with issues highlighted.
+                <b>I started by designing the dashboard for improving the usability of the app map. </b>
+            </p>
+            <div>
+                <video class="project-img-div-med" autoplay loop>
+                    <source src="../assets/MoQuality/appmap.mp4" type="video/mp4">
+                </video>
+            </div>
+            <h4>The original version of the App Map displays all screens tested by the program and highlights the errors.</h4>
+            <br>
+            <p>The design focused on helping user quickly navigate through all the issues and understand the issues by having
+                visual and verbal explanations side by side.</p>
+
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/MoQuality/appmap.png" alt="app map redesign">
+            </div>
+            <br>
+            <p>Yet after testing with the potential users, having a machine randomly clicking on the app turns out to be an
+                inefficient way of testing, because
+                <b>the users only care about how a real person would use the app and any errors that happens along the way.
+                    </b>
+            </p>
+            <div class="speech-bubble">
+                <p>
+                    <span class="quote">&ldquo;</span>I don't care about the meaningless map randomly generated, I only care about if any issue
+                    will happen when a real user is using my app.</p>
+            </div>
+
+            <div class="space15px"></div>
+            <h2>Let user create the flow</h2>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/MoQuality/createflow.png" alt="create the flow">
+            </div>
+            <div class="space15px"></div>
+            <h3 id='s3' class='section'>NEEDS</h3>
+            <h2>What's missing from current testing methods?</h2>
+            <p>There is a long list of challenges for mobile app testing. Instead of solving all of them at the same time, we
+                want to target the biggest issues faced by the users. After interviewing couple mobile app development startups,
+                <b>the biggest challenge is access to the right set of devices when there is an ever-growing list of devices
+                    and operating system versions.</b>
+            </p>
+            <div class="project-img-div-med">
+                    <img class="project-img-med" src="../assets/MoQuality/cross-device.jpg" alt="testing on different devices">
+                </div>
+            <br>
+            <p>The common practice in small mobile app companies is to buy a set of the most common devices on the market and test separately. Yet the problems are:</p>
+            <ul class="text-list">
+                    <li>
+                        <b>Buying a full set of devices is expensive and even impossible</b>
+                    </li>
+                    <li>
+                        <b>Repeat testing on multiple devices is time consuming</b>
+                    <li>
+                        <b>Errors can easily be ignored by human testers</b>
+                </ul>
+            <div class="space15px"></div>
+            <h3 id='s4' class='section'>LIMITATIONS</h3>
+            <h2>Designing for the technology limitation</h2>
+            <p>Ideally our product can test on all devices and present users with all the possible issues, 
+                but <b>the fact is that our current technology is far from flawless. 
+                The machine learning algorithm needs more labeled data from human to be able to discover more complicated issues.</b></p>
+                <div class="project-img-div-med">
+                        <img class="project-img-med" src="../assets/MoQuality/flow-view.png" alt="user flow">
+                    </div>
+                    <div class="project-img-div-med">
+                            <img class="project-img-med" src="../assets/MoQuality/compare-mode.png" alt="user flow">
+                        </div>
+                        <div class="project-img-div-med">
+                                <img class="project-img-med" src="../assets/MoQuality/change-screen.png" alt="user flow">
+                            </div>
+            <div class="space15px"></div>
+            <h3 id='s5' class='section'>DESIGNING USER FLOW</h3>
+            <h2></h2>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/MoQuality/flow-map.png" alt="user flow">
+            </div>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/MoQuality/wireframe-v1.png" alt="user flow version 1">
+            </div>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/MoQuality/wireframe-v2.png" alt="user flow version 2">
+            </div>
+
+
+
+            <div class="space15px"></div>
+            <h3 id='s6' class='section'>BRAND IDENTITY</h3>
+
+
+            <div class="space15px"></div>
+            <h3 id='s7' class='section'>REFLECTIONS</h3>
+            <h2>Designing for AI</h2>
+            <h2>Designing for Minimum viable product</h2>
+
+            <div class="jump">
+                <a class='details previous' href="../projects/medshare.html" data-toggle="tooltip" title="MedShare">
+                    < &nbspPrevious Project</a>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+    <footer>© Xueting "Nika" Zhang</footer>
+
+    <!--JS-->
+    <script src="../js/myscript.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

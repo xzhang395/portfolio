@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Collaborative Search | Xueting Zhang</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!--Google icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <!--Google fonts-->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,700" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Lora:400,400i,700" rel="stylesheet">
+
+    <link rel='shortcut icon' href='../assets/favicon.ico' type='image/x-icon' />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/slick-theme.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="nav-down">
+        <a href="../index.html" class="logo">
+            <img class="logo-img" src="../assets/Logo.png" alt="Logo">
+        </a>
+        <ul>
+            <li class="dropdown">
+                <a class='menu dropdown-toggle' data-toggle="dropdown" href="#">Portfolio
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="../projects/collaborative-search.html">Collaborative Search</a>
+                    </li>
+                    <li>
+                        <a href="../projects/earnist.html">Earnist</a>
+                    </li>
+                    <li>
+                        <a href="../projects/medshare.html">MedShare</a>
+                    </li>
+                    <li>
+                        <a href="../projects/moquality.html">MoQuality</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class='menu' href="../projects/about-me.html">About Me</a>
+            </li>
+            <li>
+                <a class='menu' href="../projects/play.html">Play</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="sidebar project-sidebar">
+        <div class="project-sum hidden">
+            <h5>Collaborative Search</h5>
+            <div id="tags">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="works-detail">
+        <div class='project project-details'>
+            <div class="space30px"></div>
+            <div class="space15px"></div>
+            <h1>Collaborative Search</h1>
+
+            <h4>September 2017 - Now
+                <br> Partially Shipped, Work-In-Progress
+                <br> Team of 3, my role: interaction designer
+            </h4>
+            <!-- 
+            <div class="space5px"></div>
+            <span class="label">Interaction Design</span>
+            <span class="label">Mobile Privacy</span>
+            <span class="label">Information Architecture</span> -->
+            <div class="space15px"></div>
+            <br>
+
+            <h3 id='s1' class='section'>BACKGROUND</h3>
+            <p>“Research shows that
+                <b>people frequently try to search for information with other people.</b> The fact that
+                <b>no user interface for collaborative searching has yet caught fire</b> suggests that the best parts of the
+                design space have yet to be investigated.”
+                <br>
+                <br> This project is sponsored by Google and NSF, with the goal to build an efficient tool for complex exploratory
+                search task. My role as a designer on the team is to design the flow and interaction for collaboration features.
+                (Advisor:
+                <a href="https://www.hcii.cmu.edu/people/aniket-kittur" target="_blank">Prof. Aniket Kittur</a>)
+            </p>
+            <p>This project is still work-in-progress.
+                <a href="https://itunes.apple.com/us/app/bento-browser/id1101530325?ls=1&mt=8" target="_blank">Want to try Beta version?</a>
+            </p>
+
+            <!-- <div class=space30px></div>
+            <div>
+                <video class="project-vid-small" autoplay loop>
+                </video>
+            </div> -->
+
+
+            <div class="space15px"></div>
+            <h3 id='s2' class='section'>PROBLEM</h3>
+            <h2>People are searching collaborately without the benefit of specialized tools</h2>
+            <p>People search in groups is currently making do by using existing communication tools, especially email, texting,
+                phone calls, and social media communication.</p>
+            <br/>
+            <p>
+                <b>But is a specialized search tool needed?</b> To answer this fundamental question, we did retrospective interviews
+                with 10 people regarding their recent experience on collaborative search (trip planning, apartment hunting,
+                academic and professional research), two key problems observed are:</p>
+            <ul class="text-list">
+                <li>
+                    <b>No easy way to organize and keep track of decisions and useful information</b>
+                </li>
+                <li>
+                    <b>Hard to keep all collaborators on the same page</b>
+                </li>
+            </ul>
+
+            <div class="project-img-div-long">
+                <img class="project-img-long" src="../assets/Bento/problem.png" alt="problem">
+            </div>
+            <h4>Existing tools fail to meet the needs for information retrieval and group awareness.</h4>
+            <br>
+
+            <div class="space15px"></div>
+            <br>
+            <h3 id='s3' class='section'>RESEARCH</h3>
+            <p>Before diving into in-depth interviews, we want to understand what is already known about collaborative search.
+                Here are what we learnt from literature review:
+            </p>
+
+            <br>
+            <h2>People search together in scenarios ranging from professional to entertainment</h2>
+            <p>Bento is positioned as a general search tool for everyday use, so it is important to understand all use scenarios.
+                All scenarios should fall into these 3 categories:</p>
+            <ul class='text-list'>
+                <li>
+                    <b>Selecting a few from many similar choices</b>
+                    <br>(e.g. travel planning, apartment hunting, shopping)</li>
+                <li>
+                    <b>Covering a topic thoroughly</b>
+                    <br>(e.g. academic reference search, legal document search)</li>
+                <li>
+                    <b>Discovering unknown information</b>
+                    <br>(e.g. crowd-sourcing a difficult mathematics proof)</li>
+            </ul>
+
+            <div class="project-img-div-long">
+                <img class="project-img-long" src="../assets/Bento/personas.png" alt="personas">
+            </div>
+            <h4>Personas are made to better understand the difference in needs for the three general use scenario.</h4>
+            <br>
+            <div class="space15px"></div>
+            <h2>Being lightweight is the key</h2>
+            <p>
+                <b>Research tools for collaborative search is not new.</b>
+                Tools like SearchTogether, Coagmento, CollabSearch allow participants to find, save, and share documents, and see the activities
+                of others in the collaboration group.
+            </p>
+            <div class="space15px"></div>
+            <p>
+                <b>Why people would rather repurpose communications technologies than using specialized tools? </b>
+                We read the
+                <a href="https://dl.acm.org/citation.cfm?id=1294215" target="_blank">SearchTogether</a> paper by Microsoft in detail and made an experience map for using SearchTogther based
+                on the paper.
+            </p>
+
+            <div class="space15px"></div>
+            <div class="project-img-div-long">
+                <img class="project-img-long" src="../assets/Bento/cosense+searchTogether.png" alt="experience map for searchTogether">
+            </div>
+            <p>Although impossible to test the real tool, by recreating the experience based on the paper, we can see it takes
+                a user many steps to reach a simple goal, which made the software complicated to use or navigate. </p>
+            <br>
+            <P>
+                <b>So the opportunity for us is to identify the most important problems to focus on and design the minimal solution
+                    to each problem.</b>
+            </P>
+            <div class="space15px"></div>
+            <h2>Defining key issues in the sensemaking process</h2>
+            <div class="one-time">
+                <div class="project-img-div-med">
+                    <img class="project-img-med" src="../assets/Bento/pilot1.jpg" alt="stakeholder modeling">
+                </div>
+                <div class="project-img-div-med">
+                    <img class="project-img-med" src="../assets/Bento/pilot2.jpg" alt="stakeholder modeling" />
+                </div>
+            </div>
+            <br>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/Bento/sensemaking-process.png" alt="sense-making process">
+            </div>
+            <br>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/Bento/group-brainstorm.jpg" alt="brainstorm problem areas">
+            </div>
+            <!-- <div class="project-img-div-long">
+                <img class="project-img-long" src="../assets/Bento/planning-roadtrip.png" alt="experience map for searchTogether">
+            </div> -->
+            <!-- <br>
+            <p>Both experience map highlighted several problem areas:</p>
+            <ul class='text-list'>
+                <li>
+                    <b>Collaborator transparency</b>
+                    <br>How to be aware of collaborators’ thoughts and progress to adjust one’s own strategy?</li>
+                <li>
+                    <b>Contextualize chat</b>
+                    <br>What content on which page is the chat message referring to?</li>
+                <li>
+                    <b>Reaching agreement</b>
+                    <br>How to facilitate negotiation and reach to agreement faster?</li>
+                <li>
+                    <b>Overwhelming history</b>
+                    <br>How to help user make sense of the decision-making trajectory?</li>
+                <li>
+                    <b>Note-taking</b>
+                    <br>How to support note-taking for different content and note reorganization?</li>
+            </ul> -->
+            <div class="space15px"></div>
+            <h2>People are unaware of what their collaborators have done</h2>
+            <ul class='text-list'>
+                <li>
+                    <b>Who is knowledgeable of what information? </b>
+                    <li>
+                        <b>Who have found / read what information?</b>
+            </ul>
+            <div class="space15px"></div>
+            <h2>Gathering opinion online is difficult, decisions are mostly made in person</h2>
+            <ul class='text-list'>
+                <li>
+                    <b>Searchers rarely respond to shared content</b>
+                    <li>
+                        <b>Searchers want to understand why certain content has been shared</b>
+            </ul>
+            <div class="space15px"></div>
+            <h2>No easy way to take notes on the phone</h2>
+            <ul class='text-list'>
+                <li>
+                    <b>Word document/ Google doc are the most common media for note-taking</b>
+                    <li>
+                        <b>Searchers would send notes to desktop through messaging app and copy the information to document</b>
+            </ul>
+            <div class="space15px"></div>
+            <h2>It is hard to gather and analyze feedback without in-person discussion</h2>
+            <ul class='text-list'>
+                <li>
+                    <b>Who is knowledgeable of what information? </b>
+                    <li>
+                        <b>Who have found / read what information?</b>
+            </ul>
+            <div class="space15px"></div>
+            <h3 id='s4' class='section'>ITERATIONS</h3>
+            <h2></h2>
+            <p>
+            </p>
+
+            <div class="project-img-div-long">
+                <img class="project-img-long" src="../assets/Bento/wireframes.png" alt="pages of wireframes">
+            </div>
+            <br>
+            <br>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/Bento/prototype-user-testing-1.png" alt="digital wireframes">
+            </div>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/Bento/prototype-user-testing-2.jpeg" alt="learning from users">
+            </div>
+
+            <div class="space15px"></div>
+            <h3 id='s5' class='section'>DESIGN DECISIONS</h3>
+
+            <div class="space15px"></div>
+            <h3 id='s6' class='section'>REFLECTIONS</h3>
+            <h2>Start by understanding the knowns and unknowns</h2>
+            <p>I jumped straight into the design process with observations and interviews only to realize later many questions
+                has already been answered by other researchers / designers. Literature review early in the process helps
+                depicting a landscape of the knowns and unknowns such provides more directions and structure to first-hand
+                findings.
+            </p>
+            <br>
+            <br>
+
+            <div class="jump">
+                <!--                <a class='details previous' href="../index.html">< &nbspPrevious Project</a>-->
+                <a class='details next' href="../projects/earnist.html" data-toggle="tooltip" title="earnist">Next Project&nbsp ></a>
+            </div>
+
+        </div>
+
+
+    </div>
+    <footer>© Xueting "Nika" Zhang</footer>
+
+
+    <!--JS-->
+    <script src="../js/myscript.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

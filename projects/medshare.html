@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MedShare | Xueting Zhang</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!--Google icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,700" rel="stylesheet">
+
+    <link rel='shortcut icon' href='../assets/favicon.ico' type='image/x-icon' />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/slick-theme.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="nav-down">
+        <a href="../index.html" class="logo">
+            <img class="logo-img" src="../assets/Logo.png" alt="Logo">
+        </a>
+        <ul>
+            <li class="dropdown">
+                <a class='menu dropdown-toggle' data-toggle="dropdown" href="#">Portfolio
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="../projects/collaborative-search.html">Collaborative Search</a>
+                    </li>
+                    <li>
+                        <a href="../projects/earnist.html">Earnist</a>
+                    </li>
+                    <li>
+                        <a href="../projects/medshare.html">MedShare</a>
+                    </li>
+                    <li>
+                        <a href="../projects/moquality.html">MoQuality</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class='menu' href="../projects/about-me.html">About Me</a>
+            </li>
+            <li>
+                <a class='menu' href="../projects/play.html">Play</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="sidebar project-sidebar">
+        <div class="project-sum hidden">
+            <h5>MedShare</h5>
+            <div id="tags">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="works-detail">
+        <div class='project project-details'>
+            <div class="space30px"></div>
+            <div class="space15px"></div>
+            <h1>MedShare <br><em>Shared emergency medicine</em></h1>
+
+            <h4>October 2017 (3 weeks)
+                <br> Class Project for
+                <i>Interaction Design Studio</i><br>
+            </h4>
+
+
+            <div class="space15px"></div>
+            <br>
+
+            <h3 id='s1' class='section'>INTRO</h3>
+            <p>
+                For this project, we want to explore how shared economy can be used for medical emergency. We started with conducting gorilla
+                research and quickly generate a wide variety of scenarios to confirm needs. The initial need-finding highlighted
+                that not having convenient access to emergency medication is a real issue that is unsolved.
+                <br>
+                <br> The goal of this project is to make emergency medication more available to people in need. My role is to
+                <b>use research to identify and reframe problems, challenge the current interaction patterns, and embody ideas
+                    through prototyping.</b>
+                </b>
+            </p>
+            <br>
+            <div class="space15px"></div>
+            <br>
+            <h3 id='s2' class='section'>PROBLEM SPACE</h3>
+            <h2>People don’t have convenient access to medication that could save their lives</h2>
+            <p>People with chronic conditions like asthma and allergy are burdened to pay for and carry around medical devices
+                all day in case of emergency. Such devices are expensive and inconvenient to carry. However, not having immediate
+                access to those devices can risk their lives.
+            </p>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/medshare/problem-space.png" alt="problem-space">
+            </div>
+            <h4>For asthma alone, millions of hospitals visits and thousands of deaths can be avoided if having access to medication
+                in time.</h4>
+
+
+            <div class="space15px"></div>
+            <h3 id='s3' class='section'>NEEDFIDING</h3>
+            <h2>Conducting guerrilla research to understand the current state</h2>
+            <p>
+                We interviewed 12 people with asthma and food allergy as well as EMT (Emergency Medical Technician). Here are some interview
+                highlights:
+            </p>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/medshare/interview.png" alt="interview highlights">
+            </div>
+            <br>
+            <p>Synthesizing interview insights and secondary research, we identified key issues of current system: </p>
+            <ul class="text-list">
+                <li>
+                    <b>Emergency devices and medicine are very expensive</b>
+                    <br>One pack of Epipen costs $600, each patient needs at least two packs – one for home, one for school/work
+                    place.
+                </li>
+                <li>
+                    <b>People often forget to carry their medicine or stop carrying them</b>
+                    <br>Only less than 30% patients who are subscribed to Epipen carry it with them all the time.</li>
+                <li>
+                    <b>Many devices go unused and expire</b>
+                    <br>EpiPens only have a one-year shelf life. About 99 percent of them expire on shelves.</li>
+            </ul>
+
+            <div class="space15px"></div>
+            <h3 id='s4' class='section'>REFRAME AND ITERATE</h3>
+            <h2>Reframe the question</h2>
+            <p><b>What if instead of every patient owns a set of medical devices, the recourses are shared in a community?</b></p>
+
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/medshare/reframe.png" alt="Reframe">
+            </div>
+            <div class="space15px"></div>
+            <h2>Concept: Medshare</h2>
+            <p>Our solution is MedShare. <b>Instead of one person buying and keeping all the medicine in case of emergency, MedShare allows people to share the medicine at the exact time when it is needed. </b></p>
+            <p>MedShare collaborates with Uber and Lyft. Drivers who sign up to be a helper would carry the medical devices in the car and deliver them on receiving an emergency  request. </p>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/medshare/concept.png" alt="MedShare concept">
+            </div>
+            <div class="space15px"></div>
+            <h2>Personas</h2>
+            <div class="project-img-div-med">
+                    <img class="project-img-med" src="../assets/medshare/persona.png" alt="personas">
+                </div>
+            <div class="space15px"></div>
+            <h2>Need Validation</h2>
+            <p>In order to test whether the user recognize the need, we presented to them a simple storyboard illustration the problem and solution. The feedback shows both positive reactions to the underlying need and some concerns.</p>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/medshare/storyboard.png" alt="storyboard">
+            </div>
+            <div class="speech-bubble"> <p><span class="quote">&ldquo;</span>I can see this idea saving lots of lives. However, <b>I would be worried about getting into legal trouble</b> if I were the helper.</p></div>
+            <div class="speech-bubble-r"><p><span class="quote">&ldquo;</span>I like the idea of always being covered. <b>But I would have some trust issues</b>: will the driver be on time? Is the driver trained for using and keeping those devices?</p></div>
+            <div class="speech-bubble"><p><span class="quote">&ldquo;</span>So the goal here is that no one need to carry any medical devices, but <b>what if people rely too much on this service</b> and don't carry any medication even when traveling to places where the service is not provided?</p></div>
+            <br>
+            <p>We recognize legal regulations to be a major barrier to this concept. However, we believe regulation to be adaptable to technology advancement, so the discussion about legal concern is out of scope for this project.<br>
+            <b>The challenge is to help users build a sense of trust in our service while understand the risks and take alternative actions if needed.</b></p>
+            <div class="space15px"></div>
+            <h2>Iterations</h2>
+            <p>We created a screen map to identify all the screens needed and prioritize the most important screens.</p>
+
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/medshare/sitemap.png" alt="screen maps">
+            </div>
+            <br>
+            <p>We had a sketching session as a group to explore designs alternatives. A mid-fidelity prototype is then made for testing.</p>
+            <div class="project-img-div-med">
+                    <img class="project-img-med" src="../assets/medshare/sketches.png" alt="sketches">
+            </div>
+            <br>
+            <div class="project-img-div-med">
+                    <img class="project-img-med" src="../assets/medshare/wireframe.png" alt="wireframes">
+            </div>
+            
+
+
+            <div class="space15px"></div>
+            <h3 id='s5' class='section'>DESIGN DECISIONS</h3>
+           
+
+            <div class="space15px"></div>
+            <h3 id='s6' class='section'>REFLECTIONS</h3>
+            
+            <div class="jump">
+                <a class='details previous' href="../projects/earnist.html" data-toggle="tooltip" title="Earnist">
+                    < &nbspPrevious Project</a>
+                        <a class='details next' href="../projects/moquality.html" data-toggle="tooltip" title="MoQuality">Next Project&nbsp ></a>
+            </div>
+
+        </div>
+
+    </div>
+    <footer>© Xueting "Nika" Zhang</footer>
+
+
+
+    <!--JS-->
+    <script src="../js/myscript.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
