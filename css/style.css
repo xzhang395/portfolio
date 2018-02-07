@@ -1,7 +1,10 @@
 * {
     font-family: 'Lato', sans-serif;
 }
-
+.working{
+    color: #4A90E2;
+    font-style: italic;
+}
 .resume p{
     font-family: 'Lato', sans-serif;
 }
