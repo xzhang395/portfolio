@@ -328,6 +328,9 @@ progress::-moz-progress-bar {
     .project-img-med {
         width: 90%;
     }
+    .project-img-small {
+        width: 70%;
+    }
 }
 
 /*Illustrations*/
