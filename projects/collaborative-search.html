@@ -30,24 +30,8 @@
             <img class="logo-img" src="../assets/Logo.png" alt="Logo">
         </a>
         <ul>
-            <li class="dropdown">
-                <a class='menu dropdown-toggle' data-toggle="dropdown" href="#">Portfolio
-                    <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li>
-                        <a href="../projects/collaborative-search.html">Collaborative Search</a>
-                    </li>
-                    <li>
-                        <a href="../projects/earnist.html">Earnist</a>
-                    </li>
-                    <li>
-                        <a href="../projects/medshare.html">MedShare</a>
-                    </li>
-                    <li>
-                        <a href="../projects/moquality.html">MoQuality</a>
-                    </li>
-                </ul>
+            <li>
+                <a class='menu' href="../index.html">Portfolio</a>
             </li>
             <li>
                 <a class='menu' href="../projects/about-me.html">About Me</a>
@@ -99,8 +83,7 @@
             <div class="space15px"></div>
             <h3 id='s2' class='section'>PROBLEM</h3>
             <h2>People are searching collaboratively without the benefit of specialized tools</h2>
-            <!-- <p>People search in groups is currently making do by using existing communication tools, especially email, texting,
-                phone calls, and social media communication.</p> -->
+
             <div class="project-img-div-med">
                 <img class="project-img-med" src="../assets/Bento/senarios.png" alt="collaborative search senarios">
             </div>
@@ -119,52 +102,12 @@
             <p>For this project, we want to understand
                 <b>what difficulties do people currently have when search collaboratively and how can we improve the experience.</b>
             </p>
-            <!-- <p>
-                <b>But is a specialized search tool needed?</b> To answer this fundamental question, we did retrospective interviews
-                with 10 people regarding their recent experience on collaborative search (trip planning, apartment hunting,
-                academic and professional research), two key problems observed are:</p>
-            <ul class="text-list">
-                <li>
-                    <b>No easy way to organize and keep track of decisions and useful information</b>
-                </li>
-                <li>
-                    <b>Hard to keep all collaborators on the same page</b>
-                </li>
-            </ul> -->
 
-            <!-- <div class="project-img-div-long">
-                <img class="project-img-long" src="../assets/Bento/problem.png" alt="problem">
-            </div>
-            <h4>Existing tools fail to meet the needs for information retrieval and group awareness.</h4>
-            <br> -->
 
             <div class="space15px"></div>
             <br>
             <h3 id='s3' class='section'>RESEARCH</h3>
-            <!-- <p>Before diving into in-depth interviews, we want to understand what is already known about collaborative search.
-                Here are what we learnt from literature review:
-            </p>
 
-            <br>
-            <h2>People search together in scenarios ranging from professional to entertainment</h2>
-            <p>Bento is positioned as a general search tool for everyday use, so it is important to understand all use scenarios.
-                All scenarios should fall into these 3 categories:</p>
-            <ul class='text-list'>
-                <li>
-                    <b>Selecting a few from many similar choices</b>
-                    <br>(e.g. travel planning, apartment hunting, shopping)</li>
-                <li>
-                    <b>Covering a topic thoroughly</b>
-                    <br>(e.g. academic reference search, legal document search)</li>
-                <li>
-                    <b>Discovering unknown information</b>
-                    <br>(e.g. crowd-sourcing a difficult mathematics proof)</li>
-            </ul>
-
-            <div class="project-img-div-long">
-                <img class="project-img-long" src="../assets/Bento/personas.png" alt="personas">
-            </div>
-            <h4>Personas are made to better understand the difference in needs for the three general use scenario.</h4> -->
             <h2>What can we learn from the predecessors</h2>
             <div class="project-img-div-med">
                 <img class="project-img-med" src="../assets/Bento/competitors.png" alt="Other collaborative search tools">
@@ -172,95 +115,170 @@
             <br>
             <p>
                 <b>Research tools for collaborative search is not new.</b>
-                Why would people rather repurpose communication technologies than using thses specialized tools? According to a
-                <a
-                    href="https://dl.acm.org/citation.cfm?id=2531617" target="_blank">research study</a>
-                    on Coagmento and Diigo -- two collaborative search tools that are currently available on the market,
-                    <b>both tools have several design issues that lead to poor users adoption.</b>
-            </p>
-
-            <!-- <div class="space15px"></div>
-            <h2>Being lightweight is the key</h2>
-            <div class="project-img-div-long">
-                <img class="project-img-long" src="../assets/Bento/cosense+searchTogether.png" alt="experience map for searchTogether">
-            </div>
-            <p>Although impossible to test the real tool, by recreating the experience based on the paper, we can see it takes
-                a user many steps to reach a simple goal, which made the software complicated to use or navigate. </p>
+                Why would people rather repurpose communication technologies than using theses specialized tools? To understand why, we did
+                heuristic evaluation on
+                <a href="https://www.diigo.com/index" target="_blank">Diigo</a>, the only functioning collaborative search tool on the market.</p>
             <br>
-            <P>
-                <b>So the opportunity for us is to identify the most important problems to focus on and design the minimal solution
-                    to each problem.</b>
-            </P> -->
+            <p>
+                <b>While search being the primary task, using Diigo requires additional effort above and beyond other ad hoc
+                    solution.</b> An experience map was made to highlight the pain points of using Diigo for collaborative
+                search.</p>
+
+            <div class="project-img-div-long">
+                <img class="project-img-long" src="../assets/Bento/diigo_he.png" alt="Heuristic evaluation of Diigo">
+            </div>
+
             <div class="space15px"></div>
             <h2>Defining the key issues</h2>
-            <div class="project-img-div-med">
-                    <img class="project-img-med" src="../assets/Bento/group-brainstorm.jpg" alt="brainstorm problem areas">
-                </div>
-            <p>Sorting the interviews data from <b>12 retrospective interviews</b> with an affinity diagram, 
-                we gathered insights about the needs and challenges people currently face when searching collaboratively, 
-                followed by two personas to represent user groups to help guide the design.</p>
-            <!-- <div class="one-time">
+            <p>To understand current challenges related to collaborative search, we conducted research through
+                <b>
+                    <a href="https://docs.google.com/document/d/1atF9OuRLE-oncaUL7NMF7vTiZ_04kV9-ZK-ajHSDN40/edit?usp=sharing"
+                        target="_blank">literature review</a>,
+                    <a href="https://docs.google.com/document/d/1L05HA-oI15xPVlvOxDQ69C0lqGeR5i9r7VQw0Q3za7o/edit?usp=sharing"
+                        target="_blank">retrospective interviews</a>, and
+                    <a href="https://docs.google.com/document/d/1v1DDiGzrYqsyU8LOMzk1iA4ADP-Uz-HmFXj3lL2w2k8/edit?usp=sharing"
+                        target="_blank">contextual inquiry.</a>
+                </b>
+                Combining and sorting research data with an affinity diagram led us to four key issues:
+                <b>awareness, Opinion and preference gathering, Note-taking, Structuring and Synthesis.</b>
+            </p>
+            <div class="one-time">
                 <div class="project-img-div-med">
                     <img class="project-img-med" src="../assets/Bento/pilot1.jpg" alt="pilot study with printouts">
                 </div>
                 <div class="project-img-div-med">
+                    <img class="project-img-med" src="../assets/Bento/pilot3.jpg" alt="pilot study with printouts" />
+                </div>
+                <div class="project-img-div-med">
                     <img class="project-img-med" src="../assets/Bento/pilot2.jpg" alt="pilot study with printouts" />
                 </div>
-            </div> -->
-            <!-- <div class="project-img-div-med">
-                <img class="project-img-med" src="../assets/Bento/sensemaking-process.png" alt="sense-making process">
-            </div> -->
-
-
-            <!-- <div class="project-img-div-long">
-                <img class="project-img-long" src="../assets/Bento/planning-roadtrip.png" alt="experience map for searchTogether">
-            </div> -->
-            <!-- <br>
-            <p>Both experience map highlighted several problem areas:</p>
-            <ul class='text-list'>
-                <li>
-                    <b>Collaborator transparency</b>
-                    <br>How to be aware of collaborators’ thoughts and progress to adjust one’s own strategy?</li>
-                <li>
-                    <b>Contextualize chat</b>
-                    <br>What content on which page is the chat message referring to?</li>
-                <li>
-                    <b>Reaching agreement</b>
-                    <br>How to facilitate negotiation and reach to agreement faster?</li>
-                <li>
-                    <b>Overwhelming history</b>
-                    <br>How to help user make sense of the decision-making trajectory?</li>
-                <li>
-                    <b>Note-taking</b>
-                    <br>How to support note-taking for different content and note reorganization?</li>
-            </ul> -->
+            </div>
+            <h4>Pilot study: asked groups of 2 to collaborate on apartment searching, provided them with hard copies of apartment
+                postings and annotation tools. </h4>
             <div class="space15px"></div>
-            <ul class='text-list'>
-                <li><b>People are unaware of what their collaborators have done</b><br>People want to know who is knowledgeable of what information and who has contributed what information.</li>
-                <li><b>Gathering opinion online is difficult, decisions are mostly made in person</b><br>Although demanding feedback from others, people rarely respond to shared content. </li>
-                <li><b>No easy way to take notes</b><br>Current note-taking process is mostly copying and pasting content to an editing platform like Word or Google Doc, which isn't time-efficient and can be chaotic. Taking notes on mobile involves sending the notes to desktop.</li>
-                <li><b>Structuring and Synthesis</b></li>
-            </ul>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/Bento/group-brainstorm.jpg" alt="brainstorm problem areas">
+            </div>
+            <h4>Used affinity diagram to combine and sort research findings.</h4>
 
+            <div class="space15px"></div>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/Bento/sense-making.png" alt="problems in the sense-making journey">
+            </div>
+            <br>
+
+            <div class="space15px"></div>
+
+            <ul class='text-list'>
+                <li>
+                    <b>AWARENESS</b>
+                    <br>People are unaware of what their collaborators have done
+                    <div class="speech-bubble">
+                        <p>
+                            <span class="quote">&ldquo;</span> I want to know who is knowledgeable of what information and who has contributed
+                            what content.</p>
+                    </div>
+
+                </li>
+                <li>
+                    <b>OPINION AND PREFERENCE GATHERING</b>
+                    <br>Gathering opinion online is difficult, decisions are mostly made in person
+                    <div class="speech-bubble-r">
+                        <p>
+                            <span class="quote">&ldquo;</span> People rarely respond to the links I shared.</p>
+                    </div>
+                </li>
+                <li>
+                    <b>NOTE-TAKING</b>
+                    <br>No easy way to take or share notes
+                    <div class="speech-bubble">
+                        <p>
+                            <span class="quote">&ldquo;</span> To take notes, I copy and paste the useful information to a Word document. When
+                            search on mobile, I would send the content to desktop through messenger app. </p>
+                    </div>
+                </li>
+                <li>
+                    <b>STRUCTURING AND SYNTHESIS</b>
+                    <br>Hard to retrieve and organize most relevant information
+                    <div class="speech-bubble-r">
+                        <p>
+                            <span class="quote">&ldquo;</span> People rarely respond to the links I shared.</p>
+                    </div>
+
+                </li>
+            </ul>
 
             <div class="space15px"></div>
             <h3 id='s4' class='section'>ITERATIONS</h3>
-            <h2></h2>
-            <p>
+            <h2>Focusing on the most important features by starting with mobile</h2>
+            <p>It is true that people prefer to do complex search tasks on desktop with a larger screen. However, by starting
+                ideation for mobile platform, we were able to focus on the essential features.
             </p>
 
-            <div class="project-img-div-long">
-                <img class="project-img-long" src="../assets/Bento/first-iteration.png" alt="initial iterations">
+            <br>
+            <p>There are other reasons why having a mobile app is valuable:</p>
+            <ul class='text-list'>
+                <li>
+                    <b>25% of mobile Web users rarely use a desktop to access the web</b>
+                </li>
+                <li>
+                    <b>People search during their spare time when not at the computer</b>
+                </li>
+                <li>
+                    <b>Structuring and Synthesis</b>
+                </li>
+            </ul>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/Bento/wireframes.png" alt="ideation" />
+            </div>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/Bento/first-iteration.png" alt="initial iterations">
+            </div>
+            <div class="space15px"></div>
+            <h2>Awareness</h2>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/Bento/awareness1.png" alt="iteration on note-taking flow">
+            </div>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/Bento/awareness2.png" alt="iteration on note-taking flow">
+            </div>
+            <div class="space15px"></div>
+            <h2>Opinion and preference gathering</h2>
+            <div class="space15px"></div>
+            <h2>Note-taking</h2>
+            <p>We started with speed-dating storyboards to verify needs for annotation (
+                <a href="https://docs.google.com/document/d/164Ys_B5pxmlauxCFSpc5z-t2HxCUGaNMhbMVuD41xIA/edit?usp=sharing"
+                    target="_blank">View</a> storyboards and findings). People expressed
+                <b>needs for different annotation techniques depending on the content and the stage of the search task.</b>
+            </p>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/Bento/note-taking1.png" alt="iteration on note-taking flow">
+            </div>
+            <div class="project-img-div-med">
+                <video class="project-img-div-med" autoplay loop>
+                    <source src="../assets/Bento/MIKA.mp4" type="video/mp4">
+                </video>
+                <h4>Using interactive prototype to test how people use different annotation techniques.</h3>
+
+            </div>
+
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/Bento/note-taking2.png" alt="iteration on note-taking flow">
+            </div>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/Bento/note-taking3.png" alt="iteration on note-taking flow">
             </div>
 
             <div class="space15px"></div>
-            <!-- <h3 id='s5' class='section'>DESIGN DECISIONS</h3> -->
+            <h2>Structuring and Synthesis</h2>
+            <div class="space15px"></div>
+            <h2>Overall flow</h2>
 
             <div class="space15px"></div>
-            <h3 id='s5' class='section'>REFLECTIONS</h3>
-            <div class="project-img-div-med">
-                    <img class="project-img-med" src="../assets/Bento/testing-collaboration.jpg" alt="pilot study with printouts" />
-                </div>
+            <h3 id='s5' class='section'>DESIGN DECISIONS</h3>
+
+            <div class="space15px"></div>
+            <h3 id='s6' class='section'>REFLECTIONS</h3>
             <h2>Start by understanding the knowns and unknowns</h2>
             <p>I jumped straight into the design process with observations and interviews only to realize later many questions
                 has already been answered by other researchers / designers. Literature review early in the process helps

@@ -438,7 +438,7 @@ progress::-moz-progress-bar {
         width: 100%;
     }
     .project-img-med {
-        width: 626px;
+        width: 100%;
     }
     .project-vid-long {
         width: 100vw;
