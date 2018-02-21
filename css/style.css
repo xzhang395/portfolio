@@ -1,6 +1,9 @@
 * {
     font-family: 'Lato', sans-serif;
 }
+.thumb{
+    display: flex;
+}
 .working{
     color: #4A90E2;
     font-style: italic;
@@ -394,6 +397,9 @@ progress::-moz-progress-bar {
 /*Layout for tablet or small desktop*/
 
 @media (min-width: 480px) and (max-width:1023px) {
+    .vimeo{
+        width: 100%;
+    }
     #profile {
         display: block;
         position: relative;
@@ -460,6 +466,74 @@ progress::-moz-progress-bar {
 /*Typography and Layout for non-mobile*/
 
 @media (min-width:480px) {
+    .resume {
+        margin: auto;
+        max-width: 740px;
+    }
+    
+    .resume h4 {
+        margin: 0;
+        font-size: 24px;
+        color: #454545;
+        font-weight: 700;
+    }
+    .resume p {
+        font-size: 18px;
+    
+    }
+    .resume em{
+        color: #959595;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 1;
+        vertical-align:top;
+        margin-bottom:40px;
+    }
+    
+    .project em{
+        font-size:25px;
+        /* color: #959595; */
+        vertical-align: top;
+    }
+    
+    
+    
+    .resume p+h4 {
+        margin-top: 30px;
+    }
+    
+    .resume h4+p {
+        margin-top: 10px;
+    }
+    
+    .resume p{
+        margin-left: 20px;
+        line-height: 1.2;
+        margin: 0 0 0px;
+    }
+    
+    .resume .duration{
+        float: right;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    
+    .resume .location {
+        float: right;
+        font-size: 15px;
+        font-weight: 400;
+        color: #959595;
+    }
+    
+    .speech-bubble {
+        width: 60%;
+            padding: 15px;
+            margin: 1em 0 1.5em;
+        }
+        .speech-bubble-r {
+            width: 60%;
+            margin: 1em auto 1.5em 20%;
+        }
     .menu {
         font-size: 14px;
         margin: 0px 20px 0px 20px;
@@ -614,6 +688,55 @@ progress::-moz-progress-bar {
 /*Layout and typography for mobile*/
 
 @media (max-width: 480px) {
+    .resume h3{
+        margin-top:40px; 
+    }
+    .resume p{
+        margin: 5px 0px 5px 0px;
+    }
+    .resume p+h4 {
+        padding-top: 20px;
+    }
+    .resume h4 {    
+        font-size: 18px;        
+        margin: 0;
+        color: #454545;
+    }
+    .location{
+        display: block;
+        color: #959595;
+        font-size: 10px;  
+
+    }
+    .resume br{
+        display: none;
+    }
+    .duration {
+        display: block;
+        color: #959595;
+        font-size: 10px;  
+
+    }
+
+    .resume em {    font-size: 14px;        
+        margin: 0;
+        color: #959595;
+    }
+
+    .resume{
+        padding: 0px 8% 0px 8%;
+    }
+    .one-time img{
+        max-width: 400px;
+        max-height: 300px;
+    }
+    .vimeo{
+        width: 100%;
+    }
+    .sidebar{
+        display: none;
+    }
+    
     .overview img{
         width:90%;
     }
@@ -650,12 +773,22 @@ progress::-moz-progress-bar {
         display: none;
     }
     .project {
-        /* padding: 20px 8% 20px 8%; */
+        padding: 40px 8% 20px 8%;
         width: 100%;
         margin-bottom: 4rem;
         height: 100%;
         /* display: flex; */
     }
+
+    .thumb{
+        flex-direction: column;
+    }
+    .ui{order:1;}
+    .project-descrp-R{order:2;}
+    .project-descrp-L{order:2;}
+
+    .divide{display: none;}
+
     footer {
         padding-left: 8%;
         margin-top: 30px;
@@ -718,11 +851,22 @@ progress::-moz-progress-bar {
     }
     #social ul {
         /*social icons in mobile*/
-        margin-top: 30px;
+        /* margin-top: 30px; */
         margin-bottom: 30px;
         padding: 0px;
         margin-left: 0px;
     }
+
+    .speech-bubble {
+        width: 100%;
+        margin: 0;
+    }
+    .speech-bubble-r {
+        width: 100%;
+        margin: 0;
+
+    }
+
     progress {
         display: none;
     }
@@ -1147,64 +1291,6 @@ ul {
     margin-right: 0.4em;
 }
 
-.resume {
-    margin: auto;
-    max-width: 740px;
-}
-
-.resume h4 {
-    margin: 0;
-    font-size: 24px;
-    color: #454545;
-    font-weight: 700;
-}
-.resume p {
-    font-size: 18px;
-
-}
-.resume em{
-    color: #959595;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 1;
-    vertical-align:top;
-    margin-bottom:40px;
-}
-
-.project em{
-    font-size:25px;
-    /* color: #959595; */
-    vertical-align: top;
-}
-
-
-
-.resume p+h4 {
-    margin-top: 30px;
-}
-
-.resume h4+p {
-    margin-top: 10px;
-}
-
-.resume p{
-    margin-left: 20px;
-    line-height: 1.2;
-    margin: 0 0 0px;
-}
-
-.resume .duration{
-    float: right;
-    font-size: 15px;
-    font-weight: 400;
-}
-
-.resume .location {
-    float: right;
-    font-size: 15px;
-    font-weight: 400;
-    color: #959595;
-}
 
 .profile-pic{
     width: 200px;
@@ -1244,28 +1330,24 @@ footer{
     text-align: center;
 }
 
+
 .speech-bubble {
     text-indent:40px;
-    width: 60%;
     font-weight: 700;
     height: auto;
 	position: relative;
 	background: #ecf3fc;
     border-radius: .4em;
     padding: 15px;
-    margin: 1em 0 1.5em;
 }
 .speech-bubble-r {
     text-indent:40px;
-
-    width: 60%;
     font-weight: 700;
     height: auto;
 	position: relative;
 	background: #ecf3fc;
     border-radius: .4em;
     padding:15px;
-    margin: 1em auto 1.5em 20%;
 }
 .speech-bubble-r:after {
 	content: '';
