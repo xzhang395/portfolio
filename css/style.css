@@ -1,23 +1,26 @@
 * {
     font-family: 'Lato', sans-serif;
 }
-.thumb{
+
+.thumb {
     display: flex;
 }
-.working{
+
+.working {
     color: #4A90E2;
     font-style: italic;
 }
-.resume p{
+
+.resume p {
     font-family: 'Lato', sans-serif;
 }
 
-.ui img{
+.ui img {
     width: 100%;
 }
 
-p{
-    font-family:'Lora', serif;
+p {
+    font-family: 'Lora', serif;
     font-size: 21px;
     letter-spacing: -.003em;
 }
@@ -54,10 +57,12 @@ body {
 #tags {
     margin-bottom: 25px;
 }
-#intro h2{
+
+#intro h2 {
     margin-left: auto;
     margin-right: auto;
 }
+
 /*
 
 #back-home {
@@ -217,6 +222,9 @@ progress::-moz-progress-bar {
     .project-img-med {
         width: 626px;
     }
+    .project-img-med-l {
+        width: 50%;
+    }
     .project-vid-long {
         width: 100vw;
         float: right;
@@ -281,6 +289,9 @@ progress::-moz-progress-bar {
     }
     .project-img-med {
         width: 626px;
+    }
+    .project-img-med-l {
+        width: 40%;
     }
     .project-img-long {
         max-width: 158%;
@@ -397,7 +408,7 @@ progress::-moz-progress-bar {
 /*Layout for tablet or small desktop*/
 
 @media (min-width: 480px) and (max-width:1023px) {
-    .vimeo{
+    .vimeo {
         width: 100%;
     }
     #profile {
@@ -446,6 +457,9 @@ progress::-moz-progress-bar {
     .project-img-med {
         width: 100%;
     }
+    .project-img-med-l {
+        width: 40%;
+    }
     .project-vid-long {
         width: 100vw;
         float: right;
@@ -466,11 +480,50 @@ progress::-moz-progress-bar {
 /*Typography and Layout for non-mobile*/
 
 @media (min-width:480px) {
+    .app-left-ui, .app-left-info, .app-right-ui, .app-right-info {
+        position: relative;
+        float: left;
+        overflow: hidden;
+    }
+    .app-right>* {
+        position: absolute;
+    }
+    .app-right {
+        /* width: 100%; */
+        position: relative;
+        width: 700px;
+        height: 560px;
+    }
+    
+    .app-left {
+        /* width: 100%; */
+        position: relative;
+        width: 900px;
+        height: 600px;
+    }
+    .app-left-ui {
+        margin-left: 70px;
+    }
+    .app-right-ui {
+        left: 450px;
+    }
+    .app-right-ui>img {
+        width: 350px;
+    }
+    .app-left-ui>img {
+        width: 350px;
+    }
+    .app-left-info, .app-right-info {
+        margin-left: 50px;
+        padding-top: 100px;
+    }
+    .app-left-info>*, .app-right-info>* {
+        width: 350px;
+    }
     .resume {
         margin: auto;
         max-width: 740px;
     }
-    
     .resume h4 {
         margin: 0;
         font-size: 24px;
@@ -479,61 +532,51 @@ progress::-moz-progress-bar {
     }
     .resume p {
         font-size: 18px;
-    
     }
-    .resume em{
+    .resume em {
         color: #959595;
         font-weight: 400;
         font-size: 21px;
         line-height: 1;
-        vertical-align:top;
-        margin-bottom:40px;
+        vertical-align: top;
+        margin-bottom: 40px;
     }
-    
-    .project em{
-        font-size:25px;
+    .project em {
+        font-size: 25px;
         /* color: #959595; */
         vertical-align: top;
     }
-    
-    
-    
     .resume p+h4 {
         margin-top: 30px;
     }
-    
     .resume h4+p {
         margin-top: 10px;
     }
-    
-    .resume p{
+    .resume p {
         margin-left: 20px;
         line-height: 1.2;
         margin: 0 0 0px;
     }
-    
-    .resume .duration{
+    .resume .duration {
         float: right;
         font-size: 15px;
         font-weight: 400;
     }
-    
     .resume .location {
         float: right;
         font-size: 15px;
         font-weight: 400;
         color: #959595;
     }
-    
     .speech-bubble {
         width: 60%;
-            padding: 15px;
-            margin: 1em 0 1.5em;
-        }
-        .speech-bubble-r {
-            width: 60%;
-            margin: 1em auto 1.5em 20%;
-        }
+        padding: 15px;
+        margin: 1em 0 1.5em;
+    }
+    .speech-bubble-r {
+        width: 60%;
+        margin: 1em auto 1.5em 20%;
+    }
     .menu {
         font-size: 14px;
         margin: 0px 20px 0px 20px;
@@ -562,12 +605,12 @@ progress::-moz-progress-bar {
         margin-bottom: 0px;
         max-width: 90%;
     }
-    .overview{
-        width:100%;
+    .overview {
+        width: 100%;
         text-align: center;
     }
-    .overview img{
-        max-width:500px;
+    .overview img {
+        max-width: 500px;
     }
     h3 {
         font-size: 18px;
@@ -639,7 +682,7 @@ progress::-moz-progress-bar {
         display: inline-block;
         margin: 60px auto 0px auto;
         padding-top: 10px;
-        width:40%;
+        width: 40%;
         -webkit-transition: all 200ms ease-in;
         -webkit-transform: scale(1);
         -ms-transition: all 200ms ease-in;
@@ -661,16 +704,16 @@ progress::-moz-progress-bar {
         -moz-transform: scale(1.015);
         transition: all 200ms ease-in;
     }
-    .project-descrp-R{
+    .project-descrp-R {
         float: right;
         width: 50%;
         margin-left: 10%;
         display: inline-block;
     }
-    .px90-gap{
-        margin-top:90px;
+    .px90-gap {
+        margin-top: 90px;
     }
-    .project-descrp-L{
+    .project-descrp-L {
         float: left;
         width: 50%;
         margin-right: 10%;
@@ -688,57 +731,53 @@ progress::-moz-progress-bar {
 /*Layout and typography for mobile*/
 
 @media (max-width: 480px) {
-    .resume h3{
-        margin-top:40px; 
+    .resume h3 {
+        margin-top: 40px;
     }
-    .resume p{
+    .resume p {
         margin: 5px 0px 5px 0px;
     }
     .resume p+h4 {
         padding-top: 20px;
     }
-    .resume h4 {    
-        font-size: 18px;        
+    .resume h4 {
+        font-size: 18px;
         margin: 0;
         color: #454545;
     }
-    .location{
+    .location {
         display: block;
         color: #959595;
-        font-size: 10px;  
-
+        font-size: 10px;
     }
-    .resume br{
+    .resume br {
         display: none;
     }
     .duration {
         display: block;
         color: #959595;
-        font-size: 10px;  
-
+        font-size: 10px;
     }
-
-    .resume em {    font-size: 14px;        
+    .resume em {
+        font-size: 14px;
         margin: 0;
         color: #959595;
     }
-
-    .resume{
+    .resume {
         padding: 0px 8% 0px 8%;
     }
-    .one-time img{
+    .one-time img {
         max-width: 400px;
         max-height: 300px;
     }
-    .vimeo{
+    .vimeo {
         width: 100%;
     }
-    .sidebar{
+    .sidebar {
         display: none;
     }
-    
-    .overview img{
-        width:90%;
+    .overview img {
+        width: 90%;
     }
     nav ul {
         margin-top: 10px;
@@ -779,16 +818,21 @@ progress::-moz-progress-bar {
         height: 100%;
         /* display: flex; */
     }
-
-    .thumb{
+    .thumb {
         flex-direction: column;
     }
-    .ui{order:1;}
-    .project-descrp-R{order:2;}
-    .project-descrp-L{order:2;}
-
-    .divide{display: none;}
-
+    .ui {
+        order: 1;
+    }
+    .project-descrp-R {
+        order: 2;
+    }
+    .project-descrp-L {
+        order: 2;
+    }
+    .divide {
+        display: none;
+    }
     footer {
         padding-left: 8%;
         margin-top: 30px;
@@ -856,7 +900,6 @@ progress::-moz-progress-bar {
         padding: 0px;
         margin-left: 0px;
     }
-
     .speech-bubble {
         width: 100%;
         margin: 0;
@@ -864,9 +907,7 @@ progress::-moz-progress-bar {
     .speech-bubble-r {
         width: 100%;
         margin: 0;
-
     }
-
     progress {
         display: none;
     }
@@ -881,6 +922,9 @@ progress::-moz-progress-bar {
     }
     .project-img-med {
         width: 100%;
+    }
+    .project-img-med-l {
+        width: 40%;
     }
     .project-vid-long {
         width: 100vw;
@@ -1058,7 +1102,7 @@ ul {
     list-style-type: circle;
 }
 
-.project-details ul{
+.project-details ul {
     max-width: 740px;
 }
 
@@ -1291,96 +1335,102 @@ ul {
     margin-right: 0.4em;
 }
 
-
-.profile-pic{
+.profile-pic {
     width: 200px;
     border-radius: 50%;
+}
 
-  }
-
-.profile{
+.profile {
     margin-top: 80px;
     text-align: center;
 }
 
 /* play */
 
-.play li{
+.play li {
     list-style-type: none;
 }
-.play img{
-margin:auto;
-}
-.slick-slide{
-    text-align: center;
-}
-.play{
-    margin-top:80px;
-}
-.one-time{
-    max-width:740px;
-    margin: 40px 0 40px 0;
-}
-.one-time img{
-    max-height:500px;
+
+.play img {
     margin: auto;
 }
 
-footer{
+.slick-slide {
     text-align: center;
 }
 
+.play {
+    margin-top: 80px;
+}
+
+.one-time {
+    max-width: 740px;
+    margin: 40px 0 40px 0;
+}
+
+.one-time img {
+    max-height: 500px;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+}
 
 .speech-bubble {
-    text-indent:40px;
+    text-indent: 40px;
     font-weight: 700;
     height: auto;
-	position: relative;
-	background: #ecf3fc;
+    position: relative;
+    background: #ecf3fc;
     border-radius: .4em;
     padding: 15px;
 }
+
 .speech-bubble-r {
-    text-indent:40px;
+    text-indent: 40px;
     font-weight: 700;
     height: auto;
-	position: relative;
-	background: #ecf3fc;
+    position: relative;
+    background: #ecf3fc;
     border-radius: .4em;
-    padding:15px;
+    padding: 15px;
 }
+
 .speech-bubble-r:after {
-	content: '';
-	position: absolute;
-	right: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 33px solid transparent;
-	border-left-color: #ecf3fc;
-	border-right: 0;
-	border-bottom: 0;
-	margin-top: -16.5px;
-	margin-right: -33px;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 33px solid transparent;
+    border-left-color: #ecf3fc;
+    border-right: 0;
+    border-bottom: 0;
+    margin-top: -16.5px;
+    margin-right: -33px;
 }
+
 .speech-bubble:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 33px solid transparent;
-	border-right-color: #ecf3fc;
-	border-left: 0;
-	border-bottom: 0;
-	margin-top: -16.5px;
-	margin-left: -33px;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 33px solid transparent;
+    border-right-color: #ecf3fc;
+    border-left: 0;
+    border-bottom: 0;
+    margin-top: -16.5px;
+    margin-left: -33px;
 }
-.quote{
-    font-family:'Lora', serif;
-        font-size: 60px;
-        color: #ccc;
-        line-height: 20px;
-        font-weight: 700;
+
+.quote {
+    font-family: 'Lora', serif;
+    font-size: 60px;
+    color: #ccc;
+    line-height: 20px;
+    font-weight: 700;
 }
