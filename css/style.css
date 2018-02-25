@@ -480,45 +480,8 @@ progress::-moz-progress-bar {
 /*Typography and Layout for non-mobile*/
 
 @media (min-width:480px) {
-    .app-left-ui, .app-left-info, .app-right-ui, .app-right-info {
-        position: relative;
-        float: left;
-        overflow: hidden;
-    }
-    .app-right>* {
-        position: absolute;
-    }
-    .app-right {
-        /* width: 100%; */
-        position: relative;
-        width: 700px;
-        height: 560px;
-    }
-    
-    .app-left {
-        /* width: 100%; */
-        position: relative;
-        width: 900px;
-        height: 600px;
-    }
-    .app-left-ui {
-        margin-left: 70px;
-    }
-    .app-right-ui {
-        left: 450px;
-    }
-    .app-right-ui>img {
-        width: 350px;
-    }
-    .app-left-ui>img {
-        width: 350px;
-    }
-    .app-left-info, .app-right-info {
-        margin-left: 50px;
-        padding-top: 100px;
-    }
-    .app-left-info>*, .app-right-info>* {
-        width: 350px;
+    .topspace{
+        margin-top:40%;
     }
     .resume {
         margin: auto;
@@ -681,6 +644,25 @@ progress::-moz-progress-bar {
     .ui {
         display: inline-block;
         margin: 60px auto 0px auto;
+        padding-top: 10px;
+        width: 40%;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1);
+        transition: all 200ms ease-in;
+    }
+    .project-details>.thumb{
+        max-width: 1000px;
+    }
+    .ui-id>img{
+        max-width: 350px;
+    }
+    .ui-id {
+        display: inline-block;
+        margin: 20px auto 0px auto;
         padding-top: 10px;
         width: 40%;
         -webkit-transition: all 200ms ease-in;
