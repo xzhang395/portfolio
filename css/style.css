@@ -480,8 +480,8 @@ progress::-moz-progress-bar {
 /*Typography and Layout for non-mobile*/
 
 @media (min-width:480px) {
-    .topspace{
-        margin-top:40%;
+    .topspace {
+        margin-top: 40%;
     }
     .resume {
         margin: auto;
@@ -654,11 +654,12 @@ progress::-moz-progress-bar {
         -moz-transform: scale(1);
         transition: all 200ms ease-in;
     }
-    .project-details>.thumb{
+    .project-details>.thumb {
         max-width: 1000px;
     }
-    .ui-id>img{
+    .ui-id>img {
         max-width: 350px;
+        width: 100%;
     }
     .ui-id {
         display: inline-block;
