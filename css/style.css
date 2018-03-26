@@ -1258,6 +1258,25 @@ ul {
     background-color: #ffffff;
 }
 
+.project-img-div-small {
+    max-width: 400px;
+    margin: 40px 0px 10px 0px;
+    z-index: 5;
+    background-color: #ffffff;
+}
+.project-img-div-small2 {
+    max-width: 50%;
+    margin: 40px 0px 10px 0px;
+    z-index: 5;
+    background-color: #ffffff;
+}
+.project-img-div-small3 {
+    max-width: 600px;
+    margin: 40px 0px 10px 0px;
+    z-index: 5;
+    background-color: #ffffff;
+}
+
 .project-vid-div-long {
     width: 100vw;
     float: right;
@@ -1420,4 +1439,13 @@ footer {
 .shadow{
     box-shadow: 0 0 10px rgba(0,0,0,0.6);
     /* box-shadow:  5px #aaaaaa; */
+}
+.statement{
+    font-size: 32px;
+    font-weight: 700;
+    /* color: #4A90E2; */
+    background: #f6f6f6;
+    padding: 20px;
+    border-radius: 5px;
+    line-height: 40px;
 }

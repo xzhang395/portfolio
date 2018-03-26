@@ -51,8 +51,8 @@
     <div class="space30px"></div>
     <div class="space15px"></div>
     <div class="overview">
-            <img src="../assets/Bento/title.png" alt="product overview">
-        </div>
+        <img src="../assets/Bento/title.png" alt="product overview">
+    </div>
     <div id="works-detail">
         <div class='project project-details'>
 
@@ -65,15 +65,13 @@
             <div class="space15px"></div>
             <br>
 
+            <h2 class="statement">How can we make collaboration in online search more efficient?</h2>
+            <div class="space30px"></div>
+
             <h3 id='s1' class='section'>BACKGROUND</h3>
-            <p>“Research shows that
-                <b>people frequently try to search for information with other people.</b> The fact that
-                <b>no user interface for collaborative searching has yet caught fire</b> suggests that the best parts of the
-                design space have yet to be investigated.”
-                <br>
-                <br> This project is sponsored by Google and NSF, with the goal to build an efficient tool for complex exploratory
-                search task. My role as a designer on the team is to design the flow and interaction for collaboration features.
-                (Advisor:
+            <p>
+                This project is sponsored by Google and NSF, with the goal to build an efficient tool for complex exploratory search task.
+                My role as a designer on the team is to design the flow and interaction for collaboration features. (Advisor:
                 <a href="https://www.hcii.cmu.edu/people/aniket-kittur" target="_blank">Prof. Aniket Kittur</a>)
             </p>
             <p>This project is still work-in-progress.
@@ -109,7 +107,7 @@
             <br>
             <h3 id='s3' class='section'>RESEARCH</h3>
 
-            <h2>What can we learn from the predecessors</h2>
+            <!-- <h2>What can we learn from the predecessors</h2>
             <div class="project-img-div-med">
                 <img class="project-img-med" src="../assets/Bento/competitors.png" alt="Other collaborative search tools">
             </div>
@@ -130,13 +128,14 @@
                 <img class="project-img-long" src="../assets/Bento/diigo_he.png" alt="Heuristic evaluation of Diigo">
             </div>
 
-            <div class="space15px"></div>
-            <h2>Defining the key issues</h2>
+            <div class="space15px"></div> -->
+
+            <h2>Is there a need for a specialized tool?</h2>
             <p>To understand current challenges related to collaborative search, we conducted research through
                 <b>
                     <a href="https://docs.google.com/document/d/1atF9OuRLE-oncaUL7NMF7vTiZ_04kV9-ZK-ajHSDN40/edit?usp=sharing" target="_blank">literature review</a>,
-                    <a href="https://docs.google.com/document/d/1L05HA-oI15xPVlvOxDQ69C0lqGeR5i9r7VQw0Q3za7o/edit?usp=sharing" target="_blank">retrospective interviews</a>, and
-                    <a href="https://docs.google.com/document/d/1v1DDiGzrYqsyU8LOMzk1iA4ADP-Uz-HmFXj3lL2w2k8/edit?usp=sharing" target="_blank">contextual inquiry.</a>
+                    <a href="https://docs.google.com/document/d/1L05HA-oI15xPVlvOxDQ69C0lqGeR5i9r7VQw0Q3za7o/edit?usp=sharing" target="_blank">12 retrospective interviews</a>, and
+                    <a href="https://docs.google.com/document/d/1v1DDiGzrYqsyU8LOMzk1iA4ADP-Uz-HmFXj3lL2w2k8/edit?usp=sharing" target="_blank">8 contextual inquiry.</a>
                 </b>
             </p>
             <div class="one-time">
@@ -158,107 +157,58 @@
             </div>
             <h4>Used affinity diagram to combine and sort research findings.</h4>
             <div class="space15px"></div>
-
-            <p> Combining and sorting research data with an affinity diagram led us to four key issues:
-                <b>awareness, Opinion and preference gathering, Note-taking, Structuring and Synthesis.</b>
-            </p>
-
-            <div class="space15px"></div>
             <div class="project-img-div-med">
                 <img class="project-img-med" src="../assets/Bento/sense-making.png" alt="problems in the sense-making journey">
             </div>
             <br>
+            <h2>A lot duplicated searches</h2>
+            <p>Without being aware of what their collaborators are searching, people end up finding and reading the same information
+                multiple times.</p>
+            <div class="project-img-div-small">
+                <img class="project-img-med" src="../assets/Bento/duplicate.png" alt="duplicated work">
+            </div>
+            <div class="space15px"></div>
+            <h2>Hard to retrieve important information</h2>
+            <p>Most people share the information they find useful through messaging platforms. However, important information
+                and decisions made around it tends to get lost in chat history.</p>
+            <div class="project-img-div-small2">
+                <img class="project-img-med" src="../assets/Bento/23.png" alt="duplicated work">
+            </div>
+            <div class="space15px"></div>
+            <h2>Rely on in-person meeting for information exchange</h2>
+            <div class="speech-bubble">
+                <p>
+                    <span class="quote">&ldquo;</span> My teammate's note is so unorganized that only he can understand.</p>
+            </div>
+            <div class="speech-bubble-r">
+                <p>
+                    <span class="quote">&ldquo;</span> People rarely respond to the links I shared.</p>
+            </div>
 
             <div class="space15px"></div>
-
+            <h3 id='s4' class='section'>DESIGN CRITERIA</h3>
+            <h2 class="statement">How might we improve collaboration efficiency by allowing people to build on each other's findings?</h2>
+            <p>A successful design should:</p>
             <ul class='text-list'>
-                <li>
-                    <b>AWARENESS</b>
-                    <br>People are unaware of what their collaborators have done
-                    <div class="speech-bubble">
-                        <p>
-                            <span class="quote">&ldquo;</span> I want to know who is knowledgeable of what information and who has contributed
-                            what content.</p>
-                    </div>
-
-                </li>
-                <li>
-                    <b>OPINION AND PREFERENCE GATHERING</b>
-                    <br>Gathering opinion online is difficult, decisions are mostly made in person
-                    <div class="speech-bubble-r">
-                        <p>
-                            <span class="quote">&ldquo;</span> People rarely respond to the links I shared.</p>
-                    </div>
-                </li>
-                <li>
-                    <b>NOTE-TAKING</b>
-                    <br>No easy way to take or share notes
-                    <div class="speech-bubble">
-                        <p>
-                            <span class="quote">&ldquo;</span> To take notes, I copy and paste the useful information to a Word document. When
-                            search on mobile, I would send the content to desktop through messenger app. </p>
-                    </div>
-                </li>
-                <li>
-                    <b>STRUCTURING AND SYNTHESIS</b>
-                    <br>Hard to retrieve and organize most relevant information
-                    <div class="speech-bubble-r">
-                        <p>
-                            <span class="quote">&ldquo;</span> My notes are all over the place: docs, bookmarks or links in messenger. It's hard
-                            to recall where are the most useful ones.</p>
-                    </div>
-
-                </li>
-            </ul>
+                    <li>
+                        <b>Inform user what has been done and what needs to be done.</b>
+                    </li>
+                    <li>
+                        <b>Provide a structure to organize and synthesize information.</b>
+                    </li>
+                    <li>
+                        <b>Help evaluate the importance of the information.</b>
+                    </li>
+                </ul>
 
             <div class="space15px"></div>
-            <h3 id='s4' class='section'>ITERATIONS</h3>
-            <!-- <h2>Focusing on the most important features by starting with mobile</h2>
-            <p>It is true that people prefer to do complex search tasks on desktop with a larger screen. However, by starting
-                ideation for mobile platform, we were able to focus on the essential features.
+            <h3 id='s5' class='section'>ITERATIONS</h3>
+            <h2>The initial iteration: chat as the central hub</h2>
+            <p>The first iteration explored how chat can be the central hub for
+                <b>receiving update from collaborators, gather opinion and make decisions. And how can important information
+                    be filtered from chat messages.</b>
             </p>
 
-            <br>
-            <p>There are other reasons why having a mobile app is valuable:</p>
-            <ul class='text-list'>
-                <li>
-                    <b>25% of mobile Web users rarely use a desktop to access the web</b>
-                </li>
-                <li>
-                    <b>People search during their spare time when not at the computer</b>
-                </li>
-                <li>
-                    <b>Structuring and Synthesis</b>
-                </li>
-            </ul> -->
-            <h2>Iterations on the four problem areas</h2>
-            <p>Based on the research findings the ideation was focused on the 4 problem areas and questions:</p>
-            <ul class='text-list'>
-                <li>
-                    <p>
-                        <b>Awareness</b>
-                        <br>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <b>Opinion and preference gathering</b>
-                        <br>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <b>Note-taking</b>
-                        <br>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <b>Structuring and Synthesis</b>
-                        <br>
-                    </p>
-                </li>
-            </ul>
             <div class="project-img-div-med">
                 <img class="project-img-med" src="../assets/Bento/wireframes.png" alt="ideation" />
             </div>
@@ -266,55 +216,45 @@
                 <img class="project-img-med" src="../assets/Bento/first-iteration.png" alt="initial iterations">
             </div>
             <div class="space15px"></div>
-            <h2>Awareness</h2>
-            <p>Early iterations explored
-                <b>transparent search history, real-time screen sharing, notification and highlights from missed activities.</b>
-            </p>
-            <div class="project-img-div-long">
-                <img class="project-img-long" src="../assets/Bento/awareness1.png" alt="iteration on note-taking flow">
-            </div>
-            <!-- <div class="project-img-div-med">
-                <img class="project-img-med" src="../assets/Bento/awareness2.png" alt="iteration on note-taking flow">
-            </div> -->
-            <p>Major test findings:</p>
+            <p>However after testing the prototype we found that:</p>
             <ul class='text-list'>
                 <li>
-                    <p>
-                        <b>Personal information should be separated from group information</b>
-                        <br>
-                    </p>
+                    <b>People don't want another messaging platform to check.</b>
                 </li>
                 <li>
-                    <p>
-                        <b>People want to be aware of not only what others did but also why they did it</b>
-                        <br>
-                    </p>
+                    <b>Chat is perceived to be temporary and unstructured. Filtering chat is complicated.</b>
                 </li>
                 <li>
-                    <p>
-                        <b>Notification spamming is a concern</b>
-                        <br>
-                    </p>
+                    <b>People are unwilling to switch browser that they are used to.</b>
+                </li>
+                <li>
+                    <b>Most of the complex searches are done on desktop.</b>
                 </li>
             </ul>
             <div class="space15px"></div>
-            <h2>Opinion and preference gathering</h2>
-            <p>Early iterations focused on exploring how to
-                <b>quickly gather opinions by creating polls from saved notes.</b>
-            </p>
-
-            <div class="project-img-div-long">
-                <img class="project-img-long" src="../assets/Bento/poll1.png" alt="creating poll" />
-            </div>
+            <h2>Change in direction: A chrome extension that helps structure and synthesize information</h2>
             <div class="space15px"></div>
-            <h2>Note-taking</h2>
-            <p>We started with speed-dating storyboards to verify needs for annotation (
-                <a href="https://docs.google.com/document/d/164Ys_B5pxmlauxCFSpc5z-t2HxCUGaNMhbMVuD41xIA/edit?usp=sharing" target="_blank">View</a> storyboards and findings). People expressed
-                <b>needs for different annotation techniques depending on the content and the stage of the search task.</b>
+            <p>
+                <b>Grouping information is a natural way of synthesizing.</b>
+            </p>
+            <p>People like the flexibility and structure provided by moving notes across buckets
             </p>
             <div class="project-img-div-med">
-                <img class="project-img-med" src="../assets/Bento/note-taking2.png" alt="iteration on note-taking flow">
+                <img class="project-img-med" src="../assets/Bento/buckets.png" alt="buckets" />
             </div>
+            <div class="space15px"></div>
+            <p><b>People want to be informed but not overwhelmed</b></p>
+            <p>User should have the freedom to access all saved notes and activities but only the most relevant information should be readily visible.</p>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/Bento/info-amount.png" alt="amount" />
+            </div>
+            <div class="space15px"></div>
+            <p><b>Nothing should get in the way of the reading experience</b></p>
+            <p>Another interesting finding is that users hate anything that will get in the way of their reading experience.
+                We heard from users:
+            "The pop-up tool box is distracting", 
+            "draging and droping the tags breaks my reading flow".
+            </p>
             <div class="project-img-div-med">
                 <video class="project-img-div-med" autoplay loop>
                     <source src="../assets/Bento/MIKA.mp4" type="video/mp4">
@@ -323,45 +263,31 @@
 
             </div>
 
-            <div class="project-img-div-long">
-                <img class="project-img-long" src="../assets/Bento/note-taking1.png" alt="iteration on note-taking flow">
-            </div>
-            <!-- <div class="project-img-div-med">
-                <img class="project-img-med" src="../assets/Bento/note-taking3.png" alt="iteration on note-taking flow">
-            </div> -->
-            <div class="project-img-div-long">
-                <img class="project-img-long" src="../assets/Bento/note-taking-new.png" alt="note-taking">
-            </div>
-
             <div class="space15px"></div>
-            <h2>Structuring and Synthesis</h2>
-            <div class="project-img-div-med">
-                <img class="project-img-med" src="../assets/Bento/artifact.png" alt="artifact" />
+            <h3 id='s6' class='section'>DESIGN DECISIONS</h3>
+            <h2>Avoid duplicated search by being aware of what's been viewed or stashed away</h2>
+            <div class="project-img-div-long">
+                <img class="project-img-long" src="../assets/Bento/awareness.png" alt="awareness">
             </div>
-            <h4>Highly organized travel itinerary from one of our interviewee</h4>
-
-            <div class="project-img-div-med">
-                <img class="project-img-med" src="../assets/Bento/structure1.png" alt="Structuring and Synthesis" />
+            <div class="space15px"></div>
+            <h2>Continue the work of others and synthesize information as a group</h2>
+            <div class="project-img-div-long">
+                <img class="project-img-long" src="../assets/Bento/reading-list.png" alt="reading list">
             </div>
             <div class="project-img-div-long">
-                <img class="project-img-long" src="../assets/Bento/structure-new.png" alt="iterations">
-            </div>
-
-
-            <div class="space15px"></div>
-            <h3 id='s5' class='section'>DESIGN DECISIONS</h3>
-            <div class="project-img-div-med">
-                <img class="project-img-med" src="../assets/Bento/awareness-hifi.png" alt="awareness" />
-            </div>
-            <div class="project-img-div-med">
-                <img class="project-img-med" src="../assets/Bento/decision-hifi.png" alt="decision making" />
-            </div>
-            <div class="project-img-div-med">
-                <img class="project-img-med" src="../assets/Bento/note-taking-hifi.png" alt="note-taking" />
-            </div>
+                    <img class="project-img-long" src="../assets/Bento/notes.png" alt="notes">
+                </div>
+                <div class="space15px"></div>
+                <h2>Continue the work of others and synthesize information as a group</h2>
+                <div class="project-img-div-long">
+                        <img class="project-img-long" src="../assets/Bento/tag.png" alt="tag">
+                    </div>
+                    <div class="project-img-div-long">
+                            <img class="project-img-long" src="../assets/Bento/trip.png" alt="trip">
+                        </div>
 
             <div class="space15px"></div>
-            <h3 id='s6' class='section'>REFLECTIONS</h3>
+            <h3 id='s7' class='section'>REFLECTIONS</h3>
             <h2>Start by understanding the knowns and unknowns</h2>
             <p>I jumped straight into the design process with observations and interviews only to realize later many questions
                 has already been answered by other researchers / designers. Literature review early in the process helps
