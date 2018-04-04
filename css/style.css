@@ -1449,3 +1449,6 @@ footer {
     border-radius: 5px;
     line-height: 40px;
 }
+.left{
+    text-align: left;
+}

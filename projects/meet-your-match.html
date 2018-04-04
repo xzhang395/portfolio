@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Google Design Exercise | Xueting Zhang</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!--Google icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Lora:400,400i,700" rel="stylesheet">
+
+    <link rel='shortcut icon' href='../assets/favicon.ico' type='image/x-icon' />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/slick-theme.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="nav-down">
+        <a href="../index.html" class="logo">
+            <img class="logo-img" src="../assets/Logo.png" alt="Logo">
+        </a>
+        <ul>
+            <li>
+                <a class='menu' href="../index.html">Portfolio</a>
+            </li>
+            <li>
+                <a class='menu' href="../projects/about-me.html">About Me</a>
+            </li>
+            <li>
+                <a class='menu' href="../projects/play.html">Play</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="sidebar project-sidebar">
+        <div class="project-sum hidden">
+            <h5>Collaborative Search</h5>
+            <div id="tags">
+            </div>
+        </div>
+    </div>
+    <div class="space30px"></div>
+    <div class="space15px"></div>
+    <div class="overview">
+        <img src="../assets/MYM/thumb.png" alt="product overview">
+    </div>
+    <div id="works-detail">
+        <div class='project project-details'>
+
+            <h1>Meet Your Match</h1>
+
+            <h4>April 2018, ~12 hours
+            </h4>
+            <div class="space15px"></div>
+            <br>
+
+            <h2 class="statement">How can we make help an adopter find a pet which matches their lifestyle?</h2>
+            <div class="space30px"></div>
+
+            <h3 id='s1' class='section'>RESEARCH</h3>
+            <p>
+                To understand the current adoption process and experience, I
+                <b>visited an animal shelter in Pittsburgh, interviewed and observed 3 shelter staff, 3 adopters and 1 potential
+                    adopter.
+                </b>
+            </p>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/MYM/interview.png" alt="interviews and observations">
+            </div>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/MYM/affinity.jpg" alt="affinity diagram">
+            </div>
+            <div class="space15px"></div>
+            <h2>People blindly choose the cute ones without thinking about compatibility and responsibility</h2>
+            <p>Young and cute animals are the most popular. Animal returns happen once in a while because of incompatibility.
+                <b>Major adoption websites have filters only for physical characteristics like breed, age or gender instead
+                    of behavior or personalities.</b>
+            </p>
+
+            <div class="project-img-div-small2">
+                <img class="project-img-med" src="../assets/MYM/petfinder.jpg" alt="petfinder">
+            </div>
+            <br>
+            <div class="speech-bubble">
+                <p>
+                    <span class="quote">&ldquo;</span>Many seniors don't understand that they can't handle a puppy.</p>
+            </div>
+            <div class="space15px"></div>
+            <h2>The selection is mutual</h2>
+            <p>
+                <b>It is every shelter staff's goal to find the best home for all animals.</b> Many shelters interview potential
+                adopters for their qualification. </p>
+            <div class="speech-bubble">
+                <p>
+                    <span class="quote">&ldquo;</span>Our animals are our clients.</p>
+            </div>
+            <div class="speech-bubble-r">
+                <p>
+                    <span class="quote">&ldquo;</span> We don't like college students as adopters because they return the animals after moving
+                    away.
+                </p>
+            </div>
+            <div class="space15px"></div>
+            <h2>People with clear preference have trouble finding the animal meets their requirement</h2>
+            <p>For adaptors who are fully prepared, finding the exact type of animal they want help build long-lasting relationships.
+                However, the
+                <b>availability of the animal changes frequently while information online rarely gets updated.</b>
+            </p>
+            <div class="speech-bubble">
+                <p>
+                    <span class="quote">&ldquo;</span>I called about the cat I saw online, they told me it's already adopted.</p>
+            </div>
+
+
+
+            <div class="space15px"></div>
+            <h3 id='s2' class='section'>DESIGN CRITERIA</h3>
+            <p>Reframed the prompt after synthetizing the research insights to guide design direction:</p>
+            <h2 class="statement">How might we help adopters make informed and responsible decisions?</h2>
+            <p>A successful design should:</p>
+            <ul class='text-list'>
+                <li>
+                    <b>Help targeted adopter to find exactly what they need.</b>
+                </li>
+                <li>
+                    <b>Help exploratory adopters understand their constrains.</b>
+                </li>
+                <li>
+                    <b>Educate impulsive adopters to make responsive decisions.</b>
+                </li>
+                <li>
+                    <b>Alleviate the burden of shelter workers to inform adopters.</b>
+                </li>
+            </ul>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/MYM/persona.png" alt="personas">
+            </div>
+
+            <div class="space15px"></div>
+            <h3 id='s3' class='section'>ITERATIONS</h3>
+            <h2>sketches and paper prototypes</h2>
+            <p>After some quick sketches, I narrowed down to 5 potential ideas to gather user feedback.
+            </p>
+
+            <div class="project-img-div-small2">
+                <img class="project-img-med" src="../assets/MYM/sketches.jpg" alt="sketches" />
+            </div>
+            <div class="one-time">
+                <div class="project-img-div-med">
+                    <img class="project-img-med" src="../assets/MYM/paper1.jpg" alt="paper prototype 1">
+                    <br>
+                    <p class="left">
+                        <b>Adoption Profile</b>
+                        <br>Fill out a mandatory survey to receive a curated list of matching each day.</p>
+                </div>
+                <div class="project-img-div-med">
+                    <img class="project-img-med" src="../assets/MYM/paper2.jpg" alt="paper prototype 2" />
+                    <br>
+                    <p class="left">
+                        <b>Foster Before Adoption</b>
+                        <br>Recommend the hesitant or inexperienced adopters to foster first in order to understand the real
+                        living conditions with their new pet. </p>
+                </div>
+                <div class="project-img-div-med">
+                    <img class="project-img-med" src="../assets/MYM/paper3.jpg" alt="paper prototype 3" />
+                    <br>
+                    <p class="left">
+                        <b>Adoption Event Finder</b>
+                        <br>To leverage the emotion factor when adopters physically interact with their potential pet.</p>
+                </div>
+                <div class="project-img-div-med">
+                    <img class="project-img-med" src="../assets/MYM/paper4.jpg" alt="paper prototype 4" />
+                    <br>
+                    <p class="left">
+                        <b>Crawling Social Media</b>
+                        <br>Allow people to get newest updates on the shelter animals and use social media as an entry point.</p>
+                </div>
+                <div class="project-img-div-med">
+                    <img class="project-img-med" src="../assets/MYM/paper5.jpg" alt="paper prototype 5" />
+                    <br>
+                    <p class="left">
+                        <b>Adoption Chatbot</b>
+                        <br>Instead of navigating through an interface, ask or answer questions from the Chatbot to get recommendations
+                        and custom experience.</p>
+                </div>
+            </div>
+            <div class="space15px"></div>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/MYM/testing.png" alt="testing paper prototypes">
+            </div>
+            <div class="space15px"></div>
+            <p>Main takeaways after testing with 3 users:</p>
+            <ul class='text-list'>
+                <li>
+                    People
+                    <b>appreciate learning more about themselves</b> before adoption.
+                </li>
+                <li>
+                    Like having a curated list to make decision-making easier but still
+                    <b>want to see all the options.</b>
+                </li>
+                <li>
+                    Like the idea of having a foster period before adoption, yet concerned that
+                    <b>constant moving can traumatize the animals.</b>
+                </li>
+                <li>
+                    <b>Don't like using social media for adoption</b> because it only shows the bright side.
+                </li>
+            </ul>
+            <div class="space15px"></div>
+            <h2>Refined direction: Finding a scientific way of matching - ASPCA’s Meet Your Match</h2>
+            <p>The ASPCA's Meet Your Match is a research-based adoptions program designed to increase the likelihood that shelter
+                dogs and cats will bond with their adopters.
+                <b>Shelters who use the Meet Your Match adoption program experienced significant improvements in the numbers
+                    of adoptions and returns.</b>
+            </p>
+            <div class="space15px"></div>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/MYM/mym.jpg" alt="meet your match">
+            </div>
+            <div class="space15px"></div>
+            <div class="project-img-div-small2">
+                <img class="project-img-med" src="../assets/MYM/flow-sketches.jpg" alt="testing paper prototypes">
+            </div>
+            <div class="space15px"></div>
+            <div class="project-img-div-long">
+                <img class="project-img-long" src="../assets/MYM/flow.png" alt="flow diagram">
+            </div>
+            <div class="space15px"></div>
+            <div class="project-img-div-long">
+                <img class="project-img-long" src="../assets/MYM/wireframe-flow.png" alt="wireframe flow">
+            </div>
+            <div class="space15px"></div>
+            <h3 id='s4' class='section'>DESIGN DECISIONS</h3>
+            <h2>Onboarding: Build trust in the matching algorithm</h2>
+            <div class="project-img-div-long">
+                <img class="project-img-long" src="../assets/MYM/onboard.png" alt="flow diagram">
+            </div>
+            <div class="space15px"></div>
+            <p>
+                <b>A.</b> The early iteration has only one screen explaining the matching algorithm. During testing, people
+                expressed confusion and distrust in the matching process. </p>
+            <p>The final design devotes three screens
+                <b>explaining the research behind the matching algorithm. Encouraging people to trust the matching results.</b>
+            </p>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/MYM/testing1.png" alt="meet your match">
+            </div>
+            <div class="space15px"></div>
+            <h2>Browsing: Discourage judgement from a single profile picture, read more and get to know every match </h2>
+            <div class="project-img-div-long">
+                <img class="project-img-long" src="../assets/MYM/matches.png" alt="flow diagram">
+            </div>
+
+            <p>
+                <b>A.</b> When the user starts browsing the matching results.
+                <b>Rather than having a shopping-like experience, I want them to slow down and read the information about each
+                    match in more details.</b> As a result, full screen cards scrolling sideways is chosen rather than an
+                infinite scroll of smaller cards.</p>
+            <div class="project-img-div-small2">
+                <img class="project-img-med" src="../assets/MYM/cards.png" alt="testing paper prototypes">
+            </div>
+            <div class="space15px"></div>
+            <p>
+                <b>B.</b> However, one problem with having big cards scrolling sideway is navigating back and forth to find
+                certain information. To solve the problem,
+                <b>a scrollable row of profile pictures are positioned on the top for fast navigation.</b>
+            </p>
+            <p>
+                <b>D.</b> An auto-played video is used to bring the animal to life and give
+                <b>a sneak peak into the animal's personality.</b>
+            </p>
+            <p>
+                <b>E.</b> Use
+                <b>first-person narrative</b> to simulate conversation and build connection. The amount of information provided
+                is tested to be just enough.</p>
+            <div class="space15px"></div>
+            <h2>Filtering: Discourage the use of filter. Yet, help adopters with strong preference find their dream companion
+                with a "wishlist".</h2>
+            <div class="project-img-div-long">
+                <img class="project-img-long" src="../assets/MYM/filtering.png" alt="flow diagram">
+            </div>
+            <div class="space15px"></div>
+            <p>
+                <b>A.</b>
+                <b>Encouraging adopters to open up to more possibilities</b>, the filter is designed to take less visual attention.
+            </p>
+            <p>
+                <b>B.</b> Yet it is understandable that people have preferences. Filter is provided for adopters who have strong
+                preference on breed, age or gender. It is likely that none of the shelter has the exact match at the moment.
+                <b>User can choose to add their preference to watch and receive an email notification when a new match is found.</b>
+            </p>
+
+            <div class="space15px"></div>
+            <h2>Fostering: Not fully prepared for adoption or disagree with the matching recommendation? Try foster before adoption.
+                </h2>
+            <div class="project-img-div-long">
+                <img class="project-img-long" src="../assets/MYM/fostering.png" alt="flow diagram">
+            </div>
+            <div class="space15px"></div>
+            <!-- <h2>Streamline process</h2>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/MYM/shelter.png" alt="flow diagram">
+            </div> -->
+            <div class="space15px"></div>
+            <h3 id='s5' class='section'>Hi-Fi</h3>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/MYM/hifi1.png" alt="flow diagram">
+            </div>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/MYM/hifi2.png" alt="flow diagram">
+            </div>
+
+            <!-- <div class="space15px"></div>
+            <h3 id='s6' class='section'>REFLECTION</h3>
+            <h2>Limitations</h2> -->
+            <!-- <div>
+            <iframe src="https://framer.cloud/ocoCn/" width=20%  frameborder="0"> </iframe></div>
+            <div class="space15px"></div>
+            <div><iframe src="https://framer.cloud/nAFON/" width="500" height="950" frameborder="0"></iframe> </div> -->
+        </div>
+
+
+    </div>
+    <footer>© Xueting "Nika" Zhang</footer>
+
+
+    <!--JS-->
+    <script src="../js/myscript.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
