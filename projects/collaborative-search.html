@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Collaborative Search | Xueting Zhang</title>
+    <title>Distill | Xueting Zhang</title>
 
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <!--Jquery-->
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!--Google icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
@@ -43,7 +43,7 @@
 
     <div class="sidebar project-sidebar">
         <div class="project-sum hidden">
-            <h5>Collaborative Search</h5>
+            <h5>Distill</h5>
             <div id="tags">
             </div>
         </div>
@@ -56,7 +56,10 @@
     <div id="works-detail">
         <div class='project project-details'>
 
-            <h1>Collaborative Search</h1>
+            <h1>Distill
+                <br>
+                <em>Sense-making in Collaborative Web Search</em>
+            </h1>
 
             <h4>September 2017 - Now
                 <br> Partially Shipped, Work-In-Progress
@@ -88,49 +91,14 @@
             </div>
             <p>Research shows that people frequently search for information with other people in
                 <b>scenarios such as trip planning, shopping, apartment hunting or academic reference search.</b>
-            </p>
-            <br/>
-            <div class="project-img-div-med">
-                <img class="project-img-med" src="../assets/Bento/disconnect.png" alt="tools currently used in collaborative search task">
-            </div>
-            <p>However, there is no successful tool to support collaborative search tasks.
-                <b>Instead, people are making do by adapting to currently available tools for difference parts in a collaborative
-                    search process.</b>
-            </p>
-            <br>
-            <p>For this project, we want to understand
-                <b>what difficulties do people currently have when search collaboratively and how can we improve the experience.</b>
-            </p>
+                However, there is no successful tool to support collaborative search tasks.</p>
 
 
             <div class="space15px"></div>
             <br>
             <h3 id='s3' class='section'>RESEARCH</h3>
 
-            <!-- <h2>What can we learn from the predecessors</h2>
-            <div class="project-img-div-med">
-                <img class="project-img-med" src="../assets/Bento/competitors.png" alt="Other collaborative search tools">
-            </div>
-            <br>
-            <p>
-                <b>Research tools for collaborative search is not new.</b>
-                Why would people rather repurpose communication technologies than using theses specialized tools? To understand why, we did
-                heuristic evaluation on
-                <a href="https://www.diigo.com/index" target="_blank">Diigo</a>, the only functioning collaborative search tool on the market.</p>
-            <br>
-            <p>
-                <b>While search being the primary task, using Diigo requires additional effort above and beyond other ad hoc
-                    solution.
-                </b> An experience map was made to highlight the pain points of using Diigo for collaborative search.
-            </p>
-
-            <div class="project-img-div-long">
-                <img class="project-img-long" src="../assets/Bento/diigo_he.png" alt="Heuristic evaluation of Diigo">
-            </div>
-
-            <div class="space15px"></div> -->
-
-            <h2>Is there a need for a specialized tool?</h2>
+            <h2>How do people search together currently?</h2>
             <p>To understand current challenges related to collaborative search, we conducted research through
                 <b>
                     <a href="https://docs.google.com/document/d/1atF9OuRLE-oncaUL7NMF7vTiZ_04kV9-ZK-ajHSDN40/edit?usp=sharing" target="_blank">literature review</a>,
@@ -157,162 +125,232 @@
             </div>
             <h4>Used affinity diagram to combine and sort research findings.</h4>
             <div class="space15px"></div>
+            <p>What we found is that there are 3 steps in a collaborative search process:</p>
+            <ul class='text-list'>
+                <li>
+                    <b>Foraging:</b> Decide on the goal and perform searches
+                </li>
+                <li>
+                    <b>Data extraction:</b> Share or save good sources
+                </li>
+                <li>
+                    <b>Synthesize:</b> Organize information into useful structure
+                </li>
+            </ul>
+            <br>
+            <p>People are currently going through this process switching between existing ad hoc tools. However,
+                <b>none of these tools are designed with collaborative search in mind, which creates some friction in the process.</b>
+            </p>
+            <div class="space15px"></div>
             <div class="project-img-div-med">
-                <img class="project-img-med" src="../assets/Bento/sense-making.png" alt="problems in the sense-making journey">
+                <img id="process" class="project-img-med" src="../assets/Bento/sense-making.png" alt="problems in the sense-making journey">
             </div>
             <br>
-            <h2>A lot duplicated searches</h2>
-            <p>Without being aware of what their collaborators are searching, people end up finding and reading the same information
-                multiple times.</p>
-            <div class="project-img-div-small">
-                <img class="project-img-med" src="../assets/Bento/duplicate.png" alt="duplicated work">
-            </div>
-            <div class="space15px"></div>
-            <h2>Hard to retrieve important information</h2>
-            <p>Most people share the information they find useful through messaging platforms. However, important information
-                and decisions made around it tends to get lost in chat history.</p>
-            <div class="project-img-div-small2">
-                <img class="project-img-med" src="../assets/Bento/23.png" alt="duplicated work">
-            </div>
-            <div class="space15px"></div>
-            <h2>Rely on in-person meeting for information exchange</h2>
-            <p>Note-takin is currently unstructured, and methods varies across individuals. It is hard for one person to understand
-                information processed by another.
-
-                <br>Also, people are not responsive to online messages. It is hard to gather feedback.
+            <p>While the whole team is trying to solve all problems in each of the three steps, our sub-team (3 designers) are
+                <b>focusing on data extraction and synthesis.</b>
             </p>
+
+            <div class="space15px"></div>
+            <h3 id='s4' class='section'>ITERATE - EXTRACT</h3>
+            <h2>Current process for notetaking is inefficient</h2>
+            <p>To extract data, people currently either
+                <b>copy and paste text to a document, share screenshots on messenger or send links back and forth.</b> There
+                are a few issues related to the current behavior:</p>
+
+            <div class="project-img-div-med">
+                <img id="process" class="project-img-med" src="../assets/Bento/extract_problems.png" alt="problems in the extraction phase">
+            </div>
+            <br>
+            <p>To solve these issues, we want to provide people
+                <b>an annotation tool to quickly capture information while they are browsing and automatically store them in
+                    a shared repository.</b>
+            </p>
+            <div class="project-img-div-small2">
+                <img class="project-img-med" src="../assets/Bento/repository.png" alt="duplicated work">
+            </div>
+            <div class="space15px"></div>
+            <h2>Initial exploration: fun interaction to encourage information labeling</h2>
+            <p>Making wireframes helped us exploring different interactions for annotations.
+                <b>We were specifically interested in ways to encourage labeling information, because people want to know why
+                    the information is shared.</b>
+            </p>
+            <br>
+            <div class="project-img-div-med">
+                <img id="process" class="project-img-med" src="../assets/Bento/interaction-wireframe.png" alt="interaction wirefram">
+            </div>
+            <p>For a while, we were really into the idea of dragging and dropping tags and emojis.
+                <b>We thought the playfulness and lightweight interaction of it can encourage use for data labeling.</b>
+            </p>
+
+            <div class="project-img-div-med">
+                <video class="project-img-div-med" muted autoplay loop>
+                    <source src="../assets/Bento/MIKA.mp4" type="video/mp4">
+                </video>
+                <h4>Using interactive prototype to test how people use different annotation techniques.</h3>
+            </div>
+            <div class="space15px"></div>
+            <p>However, at the initial browsing phase, people are going through information very quickly, they might not have
+                a strong reaction to every piece of information.
+                <b>Having to think about what emoji to use slows them down from the reading experience.</b>
+            </p>
+            <div class="space15px"></div>
+            <div class="speech-bubble">
+                <p>
+                    <span class="quote">&ldquo;</span>Choosing what emoji to use
+                    <b>slow me down</b> from reading</p>
+            </div>
+            <div class="speech-bubble-r">
+                <p>
+                    <span class="quote">&ldquo;</span>None of the emojis represents
+                    <b>how I feel</b>
+                </p>
+            </div>
+            <div class="space15px"></div>
+            <h2>Design the annotation tools to match current behavior</h2>
+            <div class="project-img-div-med">
+                <img id="process" class="project-img-med" src="../assets/Bento/annotation.png" alt="interaction wirefram">
+            </div>
+            <div class="space15px"></div>
+            <p>
+                <b>No need to copy and paste</b>
+                <br>Highlighted notes are automatically saved in a shared repository.</p>
+            <video class="project-img-div-med" muted autoplay loop>
+                <source src="../assets/Bento/highlight.mp4" type="video/mp4">
+            </video>
+            <div class="space15px"></div>
+            <p>
+                <b>Keep all format and interactivity</b>
+                <br>The clip tool saves information in its original format and links back to the original site. All links in
+                notes remain clickable.</p>
+            <video class="project-img-div-med" muted autoplay loop>
+                <source src="../assets/Bento/clip.mp4" type="video/mp4">
+            </video>
+
+            <div class="space15px"></div>
+            <h3 id='s5' class='section'>ITERATE - SYTHESIS</h3>
+            <h2>Current way of synthesizing information is flexible yet messy</h2>
+            <p>From interviews and observations, we found that
+                <b>everyone has his/her own way of labeling and structuring the notes</b> which makes it hard for collaborators
+                to understand and follow.</b>
+            </p>
+
+            <div class="project-img-div-small">
+                <img class="project-img-med" src="../assets/Bento/googledoc.png" alt="screenshot of participant's note" />
+            </div>
             <div class="speech-bubble">
                 <p>
                     <span class="quote">&ldquo;</span> My teammate's note is so unorganized that only he can understand.</p>
             </div>
-            <div class="speech-bubble-r">
-                <p>
-                    <span class="quote">&ldquo;</span> People rarely respond to the links I shared.</p>
-            </div>
 
             <div class="space15px"></div>
-            <h3 id='s4' class='section'>DESIGN CRITERIA</h3>
-            <h2 class="statement">How might we improve collaboration efficiency by allowing people to build on each other's findings?</h2>
-            <p>A successful design should:</p>
-            <ul class='text-list'>
-                <li>
-                    <b>Inform user what has been done and what needs to be done.</b>
-                </li>
-                <li>
-                    <b>Provide a structure to organize and synthesize information.</b>
-                </li>
-                <li>
-                    <b>Help evaluate the importance of the information.</b>
-                </li>
-            </ul>
-
-            <div class="space15px"></div>
-            <h3 id='s5' class='section'>ITERATIONS</h3>
-            <h2>The initial iteration: chat as the central hub</h2>
-            <p>The first iteration explored how chat can be the central hub for
-                <b>receiving update from collaborators, gather opinion and make decisions. And how can important information
-                    be filtered from chat messages.</b>
-            </p>
-
+            <h2>Balance structure and flexibility to organize</h2>
             <div class="project-img-div-med">
-                <img class="project-img-med" src="../assets/Bento/wireframes.png" alt="ideation" />
+                <img class="project-img-med" src="../assets/Bento/noteboardsketch.png" alt="buckets" />
             </div>
-            <div class="project-img-div-med">
-                <img class="project-img-med" src="../assets/Bento/first-iteration.png" alt="initial iterations">
-            </div>
-            <div class="space15px"></div>
-            <p>However after testing the prototype we found that:</p>
-            <ul class='text-list'>
-                <li>
-                    <b>People don't want another messaging platform to check.</b>
-                </li>
-                <li>
-                    <b>Chat is perceived to be temporary and unstructured. Filtering chat is complicated.</b>
-                </li>
-                <li>
-                    <b>People are unwilling to switch browser that they are used to.</b>
-                </li>
-                <li>
-                    <b>Most of the complex searches are done on desktop.</b>
-                </li>
-            </ul>
-            <div class="space15px"></div>
-            <h2>Change in direction: A chrome extension that helps structure and synthesize information</h2>
-            <div class="space15px"></div>
-            <p>
-                <b>Grouping information is a natural way of synthesizing.</b>
-            </p>
-            <p>People like the flexibility and structure provided by moving notes across buckets
+            <p>Wireframing helped us explore ways to create a structure which everyone in a group can follow to organize the
+                notes. We found that
+                <b>grouping information is a natural way of synthesizing.</b>
+                People like the flexibility and structure provided by moving notes across buckets
             </p>
             <div class="project-img-div-med">
                 <img class="project-img-med" src="../assets/Bento/buckets.png" alt="buckets" />
             </div>
+
             <div class="space15px"></div>
-            <p>
-                <b>People want to be informed but not overwhelmed</b>
-            </p>
-            <p>User should have the freedom to access all saved notes and activities but only the most relevant information
-                should be readily visible.</p>
+            <p>After testing all wireframes, we landed on a Trello-like design, where people move the uncategorized notes into
+                buckets of topics as they synthesize the information.</p>
             <div class="project-img-div-med">
-                <img class="project-img-med" src="../assets/Bento/info-amount.png" alt="amount" />
+                <img class="project-img-med" src="../assets/Bento/semi.png" alt="amount" />
             </div>
             <div class="space15px"></div>
-            <p>
-                <b>Nothing should get in the way of the reading experience</b>
-            </p>
-            <p>Another interesting finding is that users hate anything that will get in the way of their reading experience.
-                We heard from users: "The pop-up tool box is distracting", "draging and droping the tags breaks my reading
-                flow".
-            </p>
+            <p>With the help with our developer we create a prototype with partially implemented features in order to test the
+                experience. Below is a screen record from our testing session.</p>
+            <div class="space15px"></div>
+            <div class="project-img-div-small">
+                <img class="project-img-med" src="../assets/Bento/testing-b.jpg" alt="testing the working prototype" />
+            </div>
             <div class="project-img-div-med">
-                <video class="project-img-div-med" autoplay loop>
-                    <source src="../assets/Bento/MIKA.mp4" type="video/mp4">
+                <video class="project-img-div-med" muted autoplay loop>
+                    <source src="../assets/Bento/likang_2.mp4" type="video/mp4">
                 </video>
-                <h4>Using interactive prototype to test how people use different annotation techniques.</h3>
-
+                <h4>Screen record of a testing session with a trip planning scenario to Spain.</h3>
             </div>
+            <div class="space15px"></div>
+            <p>People love the smooth experience of note-taking and getting updated on what their collaborators are working
+                on. </p>
+            <p>However, our participants found seeing everything captured by their collaborator over-whelming and distracting
+                while trying to organize their own notes.
+                <b>Instead of seeing everything, they prefer to see a summary from others.</b>
+            </p>
+            <div class="speech-bubble">
+                <p>
+                    <span class="quote">&ldquo;</span> It is very convenient to take notes… I like seeing what he is working on</p>
+            </div>
+            <div class="speech-bubble-r">
+                <p>
+                    <span class="quote">&ldquo;</span> It is overwhelming to see all the notes from him… </p>
+            </div>
+            <div class="space15px"></div>
 
+            <h2>Allow synthesizing before sharing</h2>
+            <div class="space15px"></div>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/Bento/seperate.png" alt="ideas for seperating personal notes from group notes"
+                />
+            </div>
             <div class="space15px"></div>
             <h3 id='s6' class='section'>DESIGN DECISIONS</h3>
-            <h2>Avoid duplicated search by being aware of what's been viewed or stashed away</h2>
+            <h2>Save and label information while browsing</h2>
             <div class="project-img-div-long">
-                <img class="project-img-long" src="../assets/Bento/awareness.png" alt="awareness">
+                <img class="project-img-long" src="../assets/Bento/annotation_final.png" alt="annotation">
             </div>
             <div class="space15px"></div>
-            <h2>Continue the work of others and synthesize information as a group</h2>
             <div class="project-img-div-long">
-                <img class="project-img-long" src="../assets/Bento/reading-list.png" alt="reading list">
-            </div>
-            <div class="project-img-div-long">
-                <img class="project-img-long" src="../assets/Bento/notes.png" alt="notes">
+                <img class="project-img-long" src="../assets/Bento/personal.png" alt="personal note board">
             </div>
             <div class="space15px"></div>
-            <h2>Make a decision together to meet the various group members’ desires</h2>
+            <h2>Easy organization and sharing</h2>
+
             <div class="project-img-div-long">
-                <img class="project-img-long" src="../assets/Bento/tag.png" alt="tag">
+                <img class="project-img-long" src="../assets/Bento/grouping-personal.png" alt="grouping on personal board">
             </div>
+
             <div class="project-img-div-long">
-                <img class="project-img-long" src="../assets/Bento/trip.png" alt="trip">
+                <img class="project-img-long" src="../assets/Bento/group.png" alt="move to group board">
             </div>
             <div class="space15px"></div>
-            <h3 id='s7' class='section'>TESTING</h3>
-            <h2>The note board is currently under testing with a partially implemented working prototype.</h2>
-            <div class="project-img-div-med">
-                    <img class="project-img-med" src="../assets/Bento/testing-final.jpg" alt="amount" />
-                </div>
+            <h2>Create final artifact while synthesizing</h2>
+            <div class="project-img-div-long">
+                <img class="project-img-long" src="../assets/Bento/finalartifact.png" alt="final artifact">
+            </div>
 
             <div class="space15px"></div>
-            <h3 id='s8' class='section'>REFLECTIONS</h3>
+            <h3 id='s7' class='section'>NEXT STEPS</h3>
             <div class="project-img-div-med">
                 <img class="project-img-med" src="../assets/Bento/testing-collaboration.jpg" alt="demo" />
             </div>
             <h4>Collaboration feature demo at CMU Founder’s exposition</h4>
-            <h2>Start by understanding the knowns and unknowns</h2>
-            <p>I jumped straight into the design process with observations and interviews only to realize later many questions
-                has already been answered by other researchers / designers. Literature review early in the process helps
-                depicting a landscape of the knowns and unknowns such provides more directions and structure to first-hand
-                findings.
-            </p>
+            <h2>Next steps...</h2>
+            <ul>
+                <li>
+                    Development and user testing
+                </li>
+                <li>
+                    Smarter features to help decision-making
+                </li>
+            </ul>
+            <h2>Measuring success</h2>
+            <ul>
+                <li>
+                    Time spent creating final artifact
+                </li>
+                <li>
+                    Readability of the final artifact
+                </li>
+                <li>
+                    Frequency of use
+                </li>
+            </ul>
 
             <!-- <h2 class="working">Under construction...Check back later :)</h2> -->
             <div class="jump">

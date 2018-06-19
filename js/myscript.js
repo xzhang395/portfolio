@@ -1,34 +1,4 @@
 $(document).ready(function () {
-    // resize();
-    // window.onresize = resize;
-    // function resize() {
-    //     // if ($(window).width() < 779) {
-    //     //     $(".ui").remove();
-    //     //     $(".project-descrp-R").css(
-    //     //         {
-    //     //             "width": "100%",
-    //     //             "float": "none"
-    //     //         }
-    //     //     );
-    //     //     $(".project-descrp-L").css(
-    //     //         {
-    //     //             "width": "100%",
-    //     //             "float": "none"
-    //     //         }
-    //     //     );
-    //     //     $(".p1").append("<a class='ui' href='projects/collaborative-search.html'><img src='assets/earnist.png' alt='collaborative search' data-toggle='tooltip' title='See Project Details'></a>");
-    //     //     $(".p2").append("<a class='ui' href='projects/projects/earnist.html'><img src='assets/earnist.png' alt='Earnist' data-toggle='tooltip' title='See Project Details'></a>");
-    //     //     $(".p3").append("<a class='ui' href='projects/medshare.html'><img src='assets/earnist.png' alt='MedShare' data-toggle='tooltip' title='See Project Details'></a>");
-    //     //     $(".p4").append("<a class='ui' href='projects/moquality.html'><img src='assets/earnist.png' alt='MoQuality' data-toggle='tooltip' title='See Project Details'></a>");
-    //     //     $(".ui").css(
-    //     //         {
-    //     //             "width": "100%",
-    //     //             "float": "none"
-    //     //         }
-
-    //     //     );
-    //     // }
-    // }
     //Tooltip
     $('[data-toggle="tooltip"]').tooltip();
 
@@ -71,6 +41,7 @@ $(document).ready(function () {
 
         //change tag when pass anchor point 
         var anchor_offset = 0;
+        var image_offset = 0;
 
         $(window).on('scroll', function () {
             for (i = 1; i <= numSec; i++) {
@@ -80,6 +51,13 @@ $(document).ready(function () {
                     $('#a' + i).addClass('active');
                 }
             }
+            image_offset = $('#process').offset().top -200;
+            if ($(window).scrollTop() > image_offset) {
+                $('#process').attr('src', '../assets/Bento/sense-making-fade.png');
+            }
+            else{
+                $('#process').attr('src', '../assets/Bento/sense-making.png');
+          }
         })
     };
 
