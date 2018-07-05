@@ -12,7 +12,7 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 2000,
     });
-    
+
 
     //Progress Bar    
     var winHeight = $(window).height(),
@@ -51,13 +51,15 @@ $(document).ready(function () {
                     $('#a' + i).addClass('active');
                 }
             }
-            image_offset = $('#process').offset().top -200;
-            if ($(window).scrollTop() > image_offset) {
-                $('#process').attr('src', '../assets/Bento/sense-making-fade.png');
+            if ($('#process').length != 0) {
+                image_offset = $('#process').offset().top - 200;
+                if ($(window).scrollTop() > image_offset) {
+                    $('#process').attr('src', '../assets/Bento/sense-making-fade.png');
+                }
+                else {
+                    $('#process').attr('src', '../assets/Bento/sense-making.png');
+                }
             }
-            else{
-                $('#process').attr('src', '../assets/Bento/sense-making.png');
-          }
         })
     };
 
