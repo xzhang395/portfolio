@@ -654,6 +654,13 @@ progress::-moz-progress-bar {
         -moz-transform: scale(1);
         transition: all 200ms ease-in;
     }
+    .linkimg{
+        width: 70% !important;
+        box-shadow: 0 0 20px #999;
+    }
+    .linkimg2{
+        width: 90% !important;
+    }
     .project-details>.thumb {
         max-width: 1000px;
     }
@@ -1273,6 +1280,20 @@ ul {
 }
 .project-img-div-small3 {
     max-width: 600px;
+    margin: 40px 0px 10px 0px;
+    z-index: 5;
+    background-color: #ffffff;
+}
+
+.project-img-div-small4 {
+    max-width: 400px;
+    margin: 40px 0px 10px 0px;
+    z-index: 5;
+    background-color: #ffffff;
+}
+
+.project-img-div-xsmall {
+    max-width: 400px;
     margin: 40px 0px 10px 0px;
     z-index: 5;
     background-color: #ffffff;

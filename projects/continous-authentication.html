@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80051302-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-80051302-2');
+    </script>
+
+    <meta charset="utf-8">
+    <title>Designing for Continuous Authentication | Xueting Zhang</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!--Google icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Lora:400,400i,700" rel="stylesheet">
+
+    <link rel='shortcut icon' href='../assets/favicon.ico' type='image/x-icon' />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/slick-theme.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="nav-down">
+        <a href="../index.html" class="logo">
+            <img class="logo-img" src="../assets/Logo.png" alt="Logo">
+        </a>
+        <ul>
+            <li>
+                <a class='menu' href="../index.html">Portfolio</a>
+            </li>
+            <li>
+                <a class='menu' href="../projects/about-me.html">About Me</a>
+            </li>
+            <li>
+                <a class='menu' href="../projects/play.html">Play</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="sidebar project-sidebar">
+        <div class="project-sum hidden">
+            <h5>Continuous Authentication</h5>
+            <div id="tags">
+            </div>
+        </div>
+    </div>
+    <div class="space30px"></div>
+    <div class="space15px"></div>
+    <div class="overview">
+        <img src="../assets/mastercard.png" alt="product overview">
+    </div>
+    <div id="works-detail">
+        <div class='project project-details'>
+
+            <h1>Continuous Authentication
+                <br>
+                <em>The UX of a new payment authentication technology</em>
+            </h1>
+
+            <h4>January 2018 – August 2018
+                <br>Capstone Project Sponsored by Mastercard
+                <br>Team of 5, my role: design lead
+            </h4>
+            <div class="space15px"></div>
+            <br>
+
+            <h2 class="statement">How can we design for a card-not-present payment experience?</h2>
+            <div class="space30px"></div>
+
+            <h3 id='s1' class='section'>BACKGROUND</h3>
+            <p>
+                This project is
+                <a href="https://developer.mastercard.com/blog/innovating-with-academia?platform=hootsuite" target="_blank">sponsored by Mastercard</a> with the goal of exploring the future of payment authentication. At the end of
+                the 7-month we synthesized all research and findings to create a UX Guideline for using Continuous Authentication
+                for Mastercard designers or anyone interested in adopting the technology.
+                <a href="https://aroonm.github.io/MCUXG/index.html" target="_blank">Here is the link to the UX Guideline website.
+                </a>
+            </p>
+            <a class="ui linkimg" href="https://aroonm.github.io/MCUXG/index.html" target="_blank">
+                <img src="../assets/MC/UXG.png" alt="Designing for 
+                Continuous Authentication" data-toggle="tooltip" title="Check out the UX Guideline Website">
+            </a>
+            <div class="space15px"></div>
+            <p>My role as a design lead is to lead the team’s prototyping and testing efforts.
+                <br>
+                <b>Interested in our journey? Check out our
+                    <a href="https://www.hamsterbard.com/blog.html" target="_blank">blog</a>
+                </b>.
+            </p>
+
+
+            <div class="space15px"></div>
+            <h3 id='s2' class='section'>PROBLEM</h3>
+            <h2>The paradox between convenience and security</h2>
+
+            <!-- <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/Bento/senarios.png" alt="collaborative search senarios">
+            </div> -->
+            <p>Complex password, security questions, two-factor authentication…
+                <b>Technologies that make us more secure are also generally inconvenient.</b> This is because current authentication
+                technology requires active input from the users to verify their identity.
+                <b>What if we can be verified by the things we are already doing at any moment?</b>
+            </p>
+            <div class="space15px"></div>
+            <h2>Continuous Authentication technology can be a solution the paradox</h2>
+            <p>We define Continuous Authentication as
+                <b>"a system that verifies who you are, whenever you need it, without you thinking about it."</b> It uses
+                <b>machine learning and massive amounts of data</b>, to notice
+                <b>patterns in card use</b> in aggregate as well as
+                <b>behaviors unique to individuals.</b>
+            </p>
+            <div class="project-img-div-small">
+                <img class="project-img-med" src="../assets/MC/factors.png" alt="factors">
+            </div>
+            <div class="space15px"></div>
+            <p>Since data is being collected and verified from users’ existing activity,continuous authentication can be used
+                <b>without any active user input.</b> And it is
+                <b>more secure</b> than any existing authentication methods because of the massive amount of data being verified.</p>
+            <div class="space15px"></div>
+            <h2>However, the challenges are in the user perception</h2>
+            <div class="project-img-div-small">
+                <img class="project-img-med" src="../assets/MC/concerns.png" alt="concerns">
+            </div>
+            <p>Despite the potential benefits, without a clear mental model of the new technology, people are
+                <b>concerned with its reliability and security.</b> How can we design for Continuous Authentication so that
+                it is both
+                <b>convenient and trust-worthy?</b>
+            </p>
+
+            <div class="space15px"></div>
+            <h3 id='s3' class='section'>THE IDEAL JOURNEY</h3>
+            <p>Here is what an ideal journey could be for using continuous authentication. </p>
+            <div class="project-img-div-small">
+                <img class="project-img-med" src="../assets/MC/steps-41.png" alt="collaborative search senarios">
+            </div>
+            <div class="space15px"></div>
+            <h2>1. First exposure</h2>
+            <div class="project-img-div-xsmall">
+                <img class="project-img-med" src="../assets/MC/first-exposure.png" alt="collaborative search senarios">
+            </div>
+            <p>Mia is on the bus while getting a notification from her bank about a new service. Through her bank app, Mia signs
+                up for the service, learns how it works, and gives consent to data collection.</p>
+            <video class="project-img-div-small4" muted autoplay loop>
+                <source src="../assets/MC/onboard.mp4" type="video/mp4">
+            </video>
+            <div class="space15px"></div>
+            <h2>2. Profile creation</h2>
+            <video class="project-img-div-small2" muted autoplay loop>
+                <source src="../assets/MC/profile-creation.mp4" type="video/mp4">
+            </video>
+            <p>After she’s signed up, there’s a period of time where her profile is created. Mia would shop online as she normally
+                does while the system is recording several different factors about Mia and learning her behaviors.
+            </p>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/MC/fill.png" alt="collaborative search senarios">
+            </div>
+            <div class="space15px"></div>
+            <h2>3. Ideal Checkout experience</h2>
+            <div class="project-img-div-xsmall">
+                <img class="project-img-med" src="../assets/MC/ca.png" alt="collaborative search senarios">
+            </div>
+            <p>Once Mia’s profile has been fully generated, it can start working to authenticate a person quickly, easily and
+                safely. Mia no longer needs to type up her information. The system detects its Mia, and automatically populates
+                all the fields for her.
+            </p>
+            <video class="project-img-div-med" muted autoplay loop>
+                <source src="../assets/MC/auto-fill.mp4" type="video/mp4">
+            </video>
+            <div class="space15px"></div>
+            <h2>4. Security Step-up</h2>
+            <div class="project-img-div-xsmall">
+                <img class="project-img-med" src="../assets/MC/bad-actor.png" alt="collaborative search senarios">
+            </div>
+            <p>However, there will be times when behaviour doesn’t match with the usual behavior of Mia, for example, if she
+                gets hacked. The system would detect that the typing pattern and mouse movement is different from Mia and
+                would challenge the user to verify her identity through security step-ups. </p>
+            <p> Steps up is an industry term of system requiring another layer of security. One common step up is to enter a
+                code sent to phone. If the user is able to complete the step-up, she can go back to the normal checkout flow.
+            </p>
+            <video class="project-img-div-med" muted autoplay loop>
+                <source src="../assets/MC/step-up.mp4" type="video/mp4">
+            </video>
+            
+            <div class="space15px"></div>
+
+
+            <h3 id='s4' class='section'>LEARNING FROM USERS</h3>
+            <p>Throughout the project, we’ve been learning from a number of users ranging from regular consumers, merchants, and experts from industry or academia.</p>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/MC/research-numbers.png" alt="collaborative search senarios">
+            </div>
+            <div class="one-time">
+                <div class="project-img-div-med">
+                    <img class="project-img-med" src="../assets/MC/test1.jpg" alt="user research" />
+                </div>
+                <div class="project-img-div-med">
+                    <img class="project-img-med" src="../assets/MC/test2.jpg" alt="user research" />
+                </div>
+                <div class="project-img-div-med">
+                    <img class="project-img-med" src="../assets/MC/test3.jpg" alt="user research" />
+                </div>
+                <div class="project-img-div-med">
+                    <img class="project-img-med" src="../assets/MC/test4.jpg" alt="user research" />
+                </div>
+            </div>
+            <a class="ui linkimg1" href="https://aroonm.github.io/MCUXG/prototypes.html" target="_blank">
+                <div class="project-img-div-med">
+                    <img class="project-img-med" src="../assets/MC/prototypes.png" alt="Design prototypes" data-toggle="tooltip" title="View design prototypes">
+                </div>
+            </a>
+            <div class="space15px"></div>
+            <p>Among all the research activities, the most extensive one is a pager study with 20 participants over 8 days.
+                We gave each participant a credit card and asked them to make purchase each day on various ecommerce websites we prototyped.</p>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/MC/pager-study.png" alt="pager study">
+            </div>
+            <div class="space15px"></div>
+            <p>We had the participants go through the full customer journey in 8 days. We want to learn that:</p>
+            <ul class='text-list'>
+                <li>
+                    <b>how do participants feel about we creating a behavioral profile on them in the background</b>
+                </li>
+                <li>
+                    <b>How to introduce them to the autofill experience</b>
+                </li>
+                <li>
+                    <b>what a good ‘step up’ experience is.</b>
+                </li>
+            </ul>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/MC/pager-plan.png" alt="pager study">
+            </div>
+            <div class="space15px"></div>
+            <p>We’ve split up prototypes into 4 streams:</p>
+            <ul class='text-list'>
+                <li>
+                    <b>Have no control over data collection, no explanation</b>
+                </li>
+                <li>
+                    <b>User can opt in, have little explanation</b>
+                </li>
+                <li>
+                    <b>User can opt out. have little explanation</b>
+                </li>
+                <li>
+                    <b>Extensive explanation and control over data collection.</b>
+                </li>
+            </ul>
+            <div class="project-img-div-med">
+                <img class="project-img-med" src="../assets/MC/emoji-graph.png" alt="pager study">
+            </div>
+            <p>The study gave us a lot of insight. We recorded participants’ emotions for each day, and mapped them to the customer journey.
+                This emoji word cloud shows how participants’ feelings changed on each touch point for each of the 4 streams.
+                </p>
+            <div class="space15px"></div>
+
+            <h2>Page under construction, coming soon...</h2>
+
+            <!-- <h3 id='s5' class='section'>ITERATE - SYTHESIS</h3>
+            <div class="space15px"></div>
+
+            <div class="space15px"></div>
+            <h3 id='s6' class='section'>DESIGN DECISIONS</h3>
+
+
+            <div class="space15px"></div>
+            <h3 id='s7' class='section'>NEXT STEPS</h3> -->
+
+            <!-- <h2 class="working">Under construction...Check back later :)</h2> -->
+            <div class="jump">
+                <a class='details previous' href="../projects/collaborative-search.html" data-toggle="tooltip" title="Distill">
+                    < &nbspPrevious Project</a>
+                        <a class='details next' href="../projects/earnist.html" data-toggle="tooltip" title="earnist">Next Project&nbsp ></a>
+            </div>
+
+        </div>
+
+
+    </div>
+    <footer>© Xueting "Nika" Zhang</footer>
+
+
+    <!--JS-->
+    <script src="../js/myscript.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
