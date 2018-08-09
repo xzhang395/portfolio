@@ -913,6 +913,9 @@ progress::-moz-progress-bar {
     .project-img-med {
         width: 100%;
     }
+    .project-img-div-small4{
+        width: 80%;
+    }
     .project-img-med-l {
         width: 40%;
     }
