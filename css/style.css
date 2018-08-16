@@ -721,6 +721,13 @@ progress::-moz-progress-bar {
 /*Layout and typography for mobile*/
 
 @media (max-width: 480px) {
+    .statement {
+    font-size: 20px !important;
+    line-height: 20px !important;
+}
+    .overview{
+        text-align: center;
+    }
     .resume h3 {
         margin-top: 40px;
     }
@@ -840,9 +847,9 @@ progress::-moz-progress-bar {
     }
     h2 {
         font-size: 16px;
-        letter-spacing: 1.3px;
         line-height: 1.19;
         max-width: 90%;
+        font-weight: 700;
         color: #252525;
     }
     h3 {
@@ -861,9 +868,8 @@ progress::-moz-progress-bar {
     }
     h4 {
         /*project tags*/
-        font-size: 10px;
+        font-size: 14px;
         line-height: 1.4;
-        letter-spacing: 0.7px;
         margin: 30px 0px 30px 0px;
         max-width: 90%;
     }
@@ -897,6 +903,7 @@ progress::-moz-progress-bar {
     .speech-bubble-r {
         width: 100%;
         margin: 0;
+        margin-top: 10px;
     }
     progress {
         display: none;
