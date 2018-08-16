@@ -1477,3 +1477,8 @@ footer {
 .left{
     text-align: left;
 }
+.yellow{
+    color: #F79E1B;
+    margin-bottom: 20px;
+    display: block;
+}
