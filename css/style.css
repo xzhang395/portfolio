@@ -505,7 +505,6 @@ progress::-moz-progress-bar {
         font-size: 21px;
         line-height: 1;
         vertical-align: top;
-        margin-bottom: 40px;
     }
     .project em {
         font-size: 25px;
