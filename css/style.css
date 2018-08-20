@@ -642,7 +642,7 @@ progress::-moz-progress-bar {
         border-radius: 18px;
         font-size: 14px;
         padding: 5px 10px 5px 10px;
-        border: 1px solid #ccc;
+        border: 1px solid #ddd;
         color: #777;
     }
     .topspace {
@@ -928,7 +928,7 @@ progress::-moz-progress-bar {
         border-radius: 18px;
         font-size: 12px;
         padding: 2px 5px 2px 5px;
-        border: 1px solid #ccc;
+        border: 1px solid #ddd;
         color: #777;
     }
     .statement {
