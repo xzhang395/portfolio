@@ -1089,7 +1089,7 @@ progress::-moz-progress-bar {
         max-width: 90%;
     }
     .details {
-        /*pink links*/
+        display: inline-block;
         font-size: 12px;
         margin: 25px 0px 25px 0px;
         letter-spacing: .62px;
