@@ -899,7 +899,7 @@ progress::-moz-progress-bar {
         content: "";
         position: absolute;
         width: 110%;
-        height: 180%;
+        height: 160%;
         top: -50%;
         left: -5%;
         background: white;
@@ -910,7 +910,7 @@ progress::-moz-progress-bar {
         content: "";
         position: absolute;
         width: 110%;
-        height: 180%;
+        height: 160%;
         top: -50%;
         left: -5%;
         background: white;
