@@ -9,8 +9,8 @@ if ($(window).width()<480){
 {numBalls = 30;}
     const balls = [];
 
-    for (let i = 0; i < numBalls; i++) {
-        let ball = document.createElement("div");
+    for (var i = 0; i < numBalls; i++) {
+        var ball = document.createElement("div");
         ball.classList.add("ball");
         ball.style.background = colors[Math.floor(Math.random() * colors.length)];
         ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
@@ -25,12 +25,12 @@ if ($(window).width()<480){
 
     // Keyframes
     balls.forEach((el, i, ra) => {
-        let to = {
+        var to = {
             x: Math.random() * (i % 2 === 0 ? -11 : 11),
             y: Math.random() * 12
         };
 
-        let anim = el.animate(
+        var anim = el.animate(
             [
                 { transform: "translate(0, 0)" },
                 { transform: `translate(${to.x}rem, ${to.y}rem)` }
