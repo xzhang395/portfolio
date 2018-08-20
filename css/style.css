@@ -717,7 +717,7 @@ progress::-moz-progress-bar {
         width: 90%;
     }
     footer {
-        margin-top: 60px;
+        margin-top: 140px;
         padding-bottom: 30px;
     }
     hr {
@@ -783,6 +783,12 @@ progress::-moz-progress-bar {
         display: inline-block;
         font-size: 14px;
         margin: 50px 0px 25px 0px;
+        letter-spacing: .62px;
+    }
+    .jump .details{
+        display: block !important;
+        font-size: 14px;
+        margin: 25px 0px 25px 0px;
         letter-spacing: .62px;
     }
     /*images in non-mobile*/
@@ -888,6 +894,12 @@ progress::-moz-progress-bar {
 /*Layout and typography for mobile*/
 
 @media (max-width: 480px) {
+    .ui-id img{
+        width:80%;
+    }
+    .ui-id{
+        text-align: center;
+    }
     nav ul {
         margin-top: 0px !important;
     }
@@ -1051,7 +1063,6 @@ progress::-moz-progress-bar {
         display: none;
     }
     footer {
-        padding-left: 8%;
         margin-top: 30px;
         padding-bottom: 20px;
     }
@@ -1083,7 +1094,6 @@ progress::-moz-progress-bar {
     p, li {
         font-size: 18px;
         line-height: 1.43;
-        letter-spacing: .75px;
         margin: 15px 0px 15px 0px;
     }
     h4 {
@@ -1096,6 +1106,12 @@ progress::-moz-progress-bar {
     .details {
         display: inline-block;
         font-size: 12px;
+        margin: 25px 0px 25px 0px;
+        letter-spacing: .62px;
+    }
+    .jump .details{
+        display: block !important;
+        font-size: 10px;
         margin: 25px 0px 25px 0px;
         letter-spacing: .62px;
     }
@@ -1117,11 +1133,11 @@ progress::-moz-progress-bar {
         margin-left: 0px;
     }
     .speech-bubble {
-        width: 100%;
+        width: 90%;
         margin: 0;
     }
     .speech-bubble-r {
-        width: 100%;
+        width: 90%;
         margin: 0;
         margin-top: 10px;
     }
