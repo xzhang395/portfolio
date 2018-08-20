@@ -943,16 +943,19 @@ progress::-moz-progress-bar {
         font-size: 14px;
         line-height: 1.2;
         letter-spacing: 0px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     .resume p+h4 {
-        padding-top: 20px;
+        padding-top: 25px;
     }
     .resume h4 {
-        font-size: 18px;
+        font-size: 20px;
         margin: 0;
         color: #454545;
         font-weight: 700;
+    }
+    .resume h4+p {
+        margin-top: 10px;
     }
     .location {
         display: block;
