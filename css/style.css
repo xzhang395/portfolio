@@ -888,6 +888,10 @@ progress::-moz-progress-bar {
 /*Layout and typography for mobile*/
 
 @media (max-width: 480px) {
+    .banner{
+        margin: 40px 0px 50px 0px;
+
+    }
     .playsec {
         margin-top: 100px !important;
     }
