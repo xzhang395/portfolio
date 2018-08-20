@@ -940,6 +940,10 @@ progress::-moz-progress-bar {
     }
     .resume p {
         margin: 5px 0px 5px 0px;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0px;
+        margin-bottom: 10px;
     }
     .resume p+h4 {
         padding-top: 20px;
@@ -948,6 +952,7 @@ progress::-moz-progress-bar {
         font-size: 18px;
         margin: 0;
         color: #454545;
+        font-weight: 700;
     }
     .location {
         display: block;
