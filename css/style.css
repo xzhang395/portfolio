@@ -1312,6 +1312,9 @@ h2 a:hover {
     color: #FF7E6A;
     text-decoration: none;
 }
+.details:hover {
+    border-bottom: none !important;
+}
 
 h3 {
     font-weight: 700;
@@ -1457,8 +1460,28 @@ ul {
 .material-icons {
     /*google icons*/
     font-size: 20px;
-    color: #78BAFF;
+    color: #FF7E6A;
+    vertical-align: middle;
 }
+
+.details .material-icons {
+    /*google icons*/
+margin-left: 10px;
+-webkit-transition: .2s ease-in-out;
+-moz-transition: .2s ease-in-out;
+-o-transition: .2s ease-in-out;
+}
+
+.project-block:hover .material-icons{
+    transform: translateX(10px);
+    -webkit-filter: translateX(10px);
+    -webkit-transition: .2s ease-in-out;
+    -moz-filter: translateX(10px);
+    -moz-transition: .2s ease-in-out;
+    -o-filter: translateX(10px);
+    -o-transition: .2s ease-in-out;
+}
+
 
 .inline {
     display: inline-block;
