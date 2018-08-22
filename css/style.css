@@ -844,7 +844,7 @@ progress::-moz-progress-bar {
         display: inline-block;
         margin: 20px auto 0px auto;
         padding-top: 10px;
-        width: 40%;
+        width: 35%;
         /* -webkit-transition: all 200ms ease-in;
         -webkit-transform: scale(1);
         -ms-transition: all 200ms ease-in;
@@ -896,6 +896,9 @@ progress::-moz-progress-bar {
 @media (max-width: 480px) {
     .ui-id img{
         width:80%;
+    }
+    .ui-id video {
+        width: 80%;
     }
     .ui-id{
         text-align: center;
@@ -1135,6 +1138,7 @@ progress::-moz-progress-bar {
     .speech-bubble {
         width: 90%;
         margin: 0;
+        margin-top: 10px;
     }
     .speech-bubble-r {
         width: 90%;
@@ -1740,7 +1744,7 @@ footer {
 }
 
 .shadow {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.32);
     /* box-shadow:  5px #aaaaaa; */
 }
 
