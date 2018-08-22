@@ -6,6 +6,10 @@
     display: flex;
 }
 
+#s1{
+    margin-top: 100px;
+}
+
 .project-descrp-R {
     position: relative;
 }
@@ -894,8 +898,12 @@ progress::-moz-progress-bar {
 /*Layout and typography for mobile*/
 
 @media (max-width: 480px) {
+    #s1{
+        margin-top: 50px;
+    }
     .ui-id img{
         width:80%;
+        margin-top: 80px;
     }
     .ui-id video {
         width: 80%;
