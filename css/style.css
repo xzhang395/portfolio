@@ -898,6 +898,11 @@ progress::-moz-progress-bar {
 /*Layout and typography for mobile*/
 
 @media (max-width: 480px) {
+    .profile-pic {
+        width: 150px !important;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
     #s1{
         margin-top: 50px;
     }
@@ -1514,7 +1519,8 @@ margin-left: 10px;
 
 #social ul li {
     display: inline;
-    margin-right: 12px;
+    margin-right: 6px;
+    margin-left: 6px;
 }
 
 .social:hover {
