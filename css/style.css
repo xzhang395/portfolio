@@ -399,6 +399,16 @@ progress::-moz-progress-bar {
     .project-img-long {
         max-width: 158%;
     }
+.project-img-div-long-vid video{
+    max-width: 140%;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #999;
+}
+.project-img-div-long-vid img{
+    max-width: 140%;
+    border-radius: 5px;
+}
+
     .project-vid-long {
         width: 100vw;
         float: right;
@@ -622,6 +632,18 @@ progress::-moz-progress-bar {
     .project-img-long {
         width: 100%;
     }
+    .project-img-div-long-vid video    {
+        max-width: 100%;
+        border-radius: 5px;
+        box-shadow: 0 0 20px #999;
+    }
+    .project-img-div-long-vid img    {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+    .project-img-div-long-vid {
+        width: 100% !important; 
+    }
     .project-img-med {
         width: 100%;
     }
@@ -747,10 +769,42 @@ progress::-moz-progress-bar {
     .overview {
         width: 100%;
         text-align: center;
+        background: #F5F6F7;
+        overflow: hidden;
+        height: 50%;
+        max-height: 500px;
     }
     .overview img {
-        max-width: 500px;
+        max-width: 1000px;
+        box-shadow: 0 0 20px #999;
+        border-radius: 5px;
+        width: 90%;
+        transform: translateY(15%);
     }
+    .overview-mobile{
+        max-width: 800px !important;
+        border-radius: 5px;
+        width: 80% !important;
+        transform: translateY(15%);
+        box-shadow: none !important;
+    }
+    .overview-photo {
+        max-width: 100% !important;
+        border-radius: 5px;
+        width: 100% !important;
+        transform: translateY(-15%)!important;
+        box-shadow: none !important;
+    }
+
+    .overview-photo-texture {
+        max-width: 100% !important;
+        border-radius: 5px;
+        width: 100% !important;
+        transform:translateY(-25%)!important;
+        box-shadow: none !important;
+    }
+
+   
     h3 {
         font-size: 18px;
         letter-spacing: 1.3px;
@@ -1604,6 +1658,14 @@ margin-left: 10px;
 }
 
 /*Images*/
+.project-img-div-long-vid {
+    width: 80%;
+    margin: 40px 0px 10px 0px;
+    z-index: 5;
+    overflow: visible;
+    direction: rtl;
+    background-color: #ffffff;
+}
 
 .project-img-div-long {
     width: 100%;
