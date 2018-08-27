@@ -960,6 +960,15 @@ progress::-moz-progress-bar {
 /*Layout and typography for mobile*/
 
 @media (max-width: 480px) {
+    .project-img-div-long-vid{
+        width: 100% !important;
+    }
+    .project-img-div-long-vid video{
+        width: 100%;
+    }
+    .project-img-div-long-vid img{
+        width: 100%;
+    }
     .playbody .space30px{
         padding: 0;
     }
