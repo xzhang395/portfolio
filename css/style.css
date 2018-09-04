@@ -492,6 +492,9 @@ progress::-moz-progress-bar {
         z-index: -1;
         border-radius: 20px;
     }
+    .MC-height::before {
+        height: 80% !important;
+    }
 }
 
 /*Layouts for tablet to desktop 768 - 1400*/
